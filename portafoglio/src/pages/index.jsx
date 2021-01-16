@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import Header from '../components/Header';
 
 const MainPage = () => {
 
@@ -8,7 +9,7 @@ const MainPage = () => {
         
         <div>
             <Navbar/>
-            <h3>Welcome to My Portfolio </h3>
+            <Header/>
             <small>Main <Link to='/bio'>Page</Link></small>
         </div>
         );
