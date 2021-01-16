@@ -13,14 +13,14 @@ import {
 //Pages
 import MainPage from './pages';
 import NotFoundPage from './pages/404';
-import BioPage from './pages/bioPage';
+import ContactPage from './pages/contactPage';
 
 class App extends Component {
     render() {
         return <Router>
             <Switch>
             <Route exact path='/' component={MainPage} />
-            <Route exact path='/bio' component={BioPage} />
+            <Route exact path='/contact' component={ContactPage} />
             <Route exact path ='/404' component={NotFoundPage} />
             <Redirect to='/404' />
             </Switch>
