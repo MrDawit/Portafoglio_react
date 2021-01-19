@@ -15,9 +15,9 @@ function Navbar() {
         Contact
       </a>
       </div>
-      {/* <a className="navbar-brand" href="/portfolio">
+       <a className="navbar-brand" href="/portfolio">
         Portfolio
-      </a> */}
+      </a> 
     </nav>
   );
 }

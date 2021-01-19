@@ -14,6 +14,7 @@ import {
 import MainPage from './pages';
 import NotFoundPage from './pages/404';
 import ContactPage from './pages/contactPage';
+import PortfolioPage from './pages/portfolioPage';
 
 class App extends Component {
     render() {
@@ -21,6 +22,7 @@ class App extends Component {
             <Switch>
             <Route exact path='/' component={MainPage} />
             <Route exact path='/contact' component={ContactPage} />
+            <Route exact path='/portfolio' component={PortfolioPage} />
             <Route exact path ='/404' component={NotFoundPage} />
             <Redirect to='/404' />
             </Switch>
