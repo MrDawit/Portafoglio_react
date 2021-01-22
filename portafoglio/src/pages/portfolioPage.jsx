@@ -1,24 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Project from '../components/Project';
+import ProjectList from '../components/Project-List';
+import {ProjectProvider} from "../utils/ProjectContext";
 
-const PortfolioPage = () => {
+const ProjectListPage = () => {
 
     return (
 
-        <div>
+        <>
             <Navbar />
-            <Header />
 
-            <Project>
-                <Link to="/">Covid-19 Info App</Link>
+            <ProjectProvider>
+      <ProjectList/>
+      </ProjectProvider>
+
+            {/* <Project>
+                <Link to="https://troylochner.github.io/covid19-info/">Covid-19 Info App</Link>
             </Project>
 
             <Project>
-                <Link to="/">the ToolShed App</Link>
+                <Link to="https://all-u-can-burger.herokuapp.com/">the ToolShed App</Link>
             </Project>
 
             <Project>
@@ -26,20 +28,20 @@ const PortfolioPage = () => {
             </Project>
 
             <Project>
-                <Link to="/">All U Can Burger App</Link>
+                <Link href="https://all-u-can-burger.herokuapp.com/">All U Can Burger App</Link>
             </Project>
 
             <Project>
-                <Link to="/">Weather App</Link>
+                <Link href="https://mrdawit.github.io/WeatherApp/">Weather App</Link>
             </Project>
 
             <Project>
                 <Link to="/">Scheduler App</Link>
-            </Project>
+            </Project> */}
 
             <Footer />
-        </div>
+        </>
     );
 };
 
-export default PortfolioPage;
+export default ProjectListPage;

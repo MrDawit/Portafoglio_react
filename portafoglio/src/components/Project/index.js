@@ -7,7 +7,6 @@ function Project() {
       <>
     <div className="bg-light">
       <div>
-        {/* {{}} */}
       </div>
       </div>
     </>
