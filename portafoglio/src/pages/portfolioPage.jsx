@@ -3,7 +3,7 @@ import React from 'react';
 import Header from "../components/Header";
 import Footer from '../components/Footer';
 import ProjectList from '../components/Project-List';
-import {ProjectProvider} from "../utils/ProjectContext";
+import { ProjectProvider } from "../utils/ProjectContext";
 import "../assets/css/portfolioPage.css";
 
 const ProjectListPage = () => {
@@ -11,12 +11,15 @@ const ProjectListPage = () => {
     return (
 
         <>
-            {/* <Navbar /> */}
-<Header/>
-            <ProjectProvider>
-      <ProjectList/>
-      </ProjectProvider>
 
+            {/* <Navbar /> */}
+            <Header />
+
+            <main>
+                <ProjectProvider>
+                    <ProjectList />
+                </ProjectProvider>
+            </main>
             {/* <Project>
                 <Link to="https://troylochner.github.io/covid19-info/">Covid-19 Info App</Link>
             </Project>
