@@ -10,20 +10,16 @@ export const ProjectProvider = (props)=>{
         {
             id: 1,
             name: "Recipe Tracker",
-            status: "Closed",
             description_short: "App to organize your recipes",
-            imageURL: "https://raw.githubusercontent.com/MrDawit/Portafoglio_react/main/portafoglio/src/assets/img/main.png",
-            // era: "October 2020",
+            imageURL: require("../assets/img/main.png").default,
             GitHubRepo:"https://github.com/lcalderin12/Recipe-Tracker",
             deployURL:"https://recipes-tracker-hanzee.herokuapp.com/",
         }, 
         {
             id: 2,
             name: "Cov19 Info",
-            status: "Closed",
             description_short: "Covid-19 high level statistics dashboard.",
-            imageURL: "https://raw.githubusercontent.com/MrDawit/Portafoglio_react/main/portafoglio/src/assets/img/covid19_info.png",
-            era: "October 2020",
+            imageURL: require("../assets/img/covid19_info.png").default,
             GitHubRepo:"https://github.com/troylochner/covid19-info",
             deployURL:"https://troylochner.github.io/covid19-info/",
         }, 
@@ -32,11 +28,10 @@ export const ProjectProvider = (props)=>{
             name: "All U Can Burger",
             status: "Open",
             description_short: "App to organize your burger diet using express handlebars",
-            imageURL: "https://raw.githubusercontent.com/MrDawit/Portafoglio_react/main/portafoglio/src/assets/img/AllUCanBurger.png",
-            dateComplete:""
-            ,GitHubRepo:"https://github.com/MrDawit/All-U-Can-Burger"
-            ,deployURL:"https://all-u-can-burger.herokuapp.com/"
-        }, 
+            imageURL: require("../assets/img/AllUCanBurger.png").default,
+            GitHubRepo:"https://github.com/MrDawit/All-U-Can-Burger",
+            deployURL:"https://all-u-can-burger.herokuapp.com/"
+        } 
  
 
 ]); 
@@ -49,7 +44,3 @@ export const ProjectProvider = (props)=>{
 );
 
 }
-
-
-
-//export default EmployeeContext;
