@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from '../components/Footer';
 import ProjectList from '../components/Project-List';
 import {ProjectProvider} from "../utils/ProjectContext";
+import "../assets/css/portfolioPage.css";
 
 const ProjectListPage = () => {
 
