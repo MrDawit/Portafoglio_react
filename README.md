@@ -20,10 +20,10 @@ Deployed Portfolio:
 My portfolio created using React
    
 
-<img src="./portafoglio/src/assets/img/Shalom Dawit_Portfolio.gif" />
+<img src="./src/assets/img/Shalom Dawit_Portfolio.gif" />
 
 
-<img src="./portafoglio/src/assets/img/Portafoglio_react.png" width="600" height="296" />
+<img src="./src/assets/img/Portafoglio_react.png" width="600" height="296" />
 
 
 
