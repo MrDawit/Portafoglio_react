@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Portafoglio_react/static/css/main.1d0daf4a.chunk.css",
+    "main.js": "/Portafoglio_react/static/js/main.3d401457.chunk.js",
+    "main.js.map": "/Portafoglio_react/static/js/main.3d401457.chunk.js.map",
+    "runtime-main.js": "/Portafoglio_react/static/js/runtime-main.38f8e0ef.js",
+    "runtime-main.js.map": "/Portafoglio_react/static/js/runtime-main.38f8e0ef.js.map",
+    "static/js/2.a13f9df4.chunk.js": "/Portafoglio_react/static/js/2.a13f9df4.chunk.js",
+    "static/js/2.a13f9df4.chunk.js.map": "/Portafoglio_react/static/js/2.a13f9df4.chunk.js.map",
+    "static/js/3.62214f2b.chunk.js": "/Portafoglio_react/static/js/3.62214f2b.chunk.js",
+    "static/js/3.62214f2b.chunk.js.map": "/Portafoglio_react/static/js/3.62214f2b.chunk.js.map",
+    "index.html": "/Portafoglio_react/index.html",
+    "static/css/main.1d0daf4a.chunk.css.map": "/Portafoglio_react/static/css/main.1d0daf4a.chunk.css.map",
+    "static/js/2.a13f9df4.chunk.js.LICENSE.txt": "/Portafoglio_react/static/js/2.a13f9df4.chunk.js.LICENSE.txt",
+    "static/media/AllUCanBurger.png": "/Portafoglio_react/static/media/AllUCanBurger.86b25cfa.png",
+    "static/media/PIC.JPG": "/Portafoglio_react/static/media/PIC.db21812a.JPG",
+    "static/media/contactPage.css": "/Portafoglio_react/static/media/bgimage.9c257469.jpg",
+    "static/media/covid19_info.png": "/Portafoglio_react/static/media/covid19_info.4cd9d2ed.png",
+    "static/media/favicon.ico": "/Portafoglio_react/static/media/favicon.2aeb8764.ico",
+    "static/media/logo.6ce24c58.svg": "/Portafoglio_react/static/media/logo.6ce24c58.svg",
+    "static/media/main.png": "/Portafoglio_react/static/media/main.e1186d16.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.38f8e0ef.js",
+    "static/js/2.a13f9df4.chunk.js",
+    "static/css/main.1d0daf4a.chunk.css",
+    "static/js/main.3d401457.chunk.js"
+  ]
+}
