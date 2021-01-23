@@ -9,7 +9,7 @@ const MainPage = () => {
 
     return (
         <>
-            {/* <Navbar /> */}
+        <div className="body">
             <Header />
             <main className="col-xs-12 col-lg-10">
 
@@ -25,9 +25,8 @@ const MainPage = () => {
                 </div>
 
             </main>
-            {/* link test */}
-            {/* <small>Main <Link to='/bio'>Page</Link></small> */}
             <Footer />
+            </div>
         </>
     );
 };

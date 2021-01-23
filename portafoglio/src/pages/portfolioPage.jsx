@@ -11,13 +11,13 @@ const ProjectListPage = () => {
     return (
 
         <>
-
+        <div className="body">
             {/* <Navbar /> */}
             <Header />
 
             <main>
                 <ProjectProvider>
-                    <ProjectList />
+                    <ProjectList/>
                 </ProjectProvider>
             </main>
             {/* <Project>
@@ -43,8 +43,8 @@ const ProjectListPage = () => {
             <Project>
                 <Link to="/">Scheduler App</Link>
             </Project> */}
-
             <Footer />
+            </div>
         </>
     );
 };

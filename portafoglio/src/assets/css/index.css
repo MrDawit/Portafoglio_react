@@ -1,3 +1,8 @@
+.body{
+    background-image: url("../img/bgimage.jpg");
+    /*  background-color:blueviolet; */
+      background-image:repeat;
+}
 #purple{
     box-shadow: 0 5px rgb(253, 142, 253);
     border-radius:95%;
@@ -36,9 +41,7 @@ main {
 }
 
 main img {
-    /* height:100%; */
     max-height:350px;
-    /* width:100%; */
     max-width:350px;
 }
 
