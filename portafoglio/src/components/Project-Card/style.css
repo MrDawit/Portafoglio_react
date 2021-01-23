@@ -1,0 +1,14 @@
+.card-title{
+border:solid;
+text-align: center;
+background-color:gold;
+}
+
+.card-content{
+/* border:solid; */
+text-decoration: underline;
+}
+
+.card-link{
+border:solid;
+}
