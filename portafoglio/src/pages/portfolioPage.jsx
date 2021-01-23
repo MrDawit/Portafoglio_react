@@ -1,5 +1,6 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+// import Navbar from '../components/Header';
+import Header from "../components/Header";
 import Footer from '../components/Footer';
 import ProjectList from '../components/Project-List';
 import {ProjectProvider} from "../utils/ProjectContext";
@@ -9,8 +10,8 @@ const ProjectListPage = () => {
     return (
 
         <>
-            <Navbar />
-
+            {/* <Navbar /> */}
+<Header/>
             <ProjectProvider>
       <ProjectList/>
       </ProjectProvider>

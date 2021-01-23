@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '../components/Navbar';
+// import Navbar from '../components/Header';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -8,7 +8,7 @@ const MainPage = () => {
 
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <Header />
             <main className="col-xs-12 col-lg-10">
 

@@ -34,9 +34,9 @@ class App extends Component {
         return <Router>
             <ProjectProvider>
             <Switch>
-            <Route exact path="/" component={ProjectList}></Route>
-            <Route exact path="/react-portfolio" component={ProjectList}></Route>
-
+            {/* <Route exact path="/" component={ProjectList}></Route>
+            <Route exact path="/react-portfolio" component={ProjectList}></Route> */}
+            <Route exact path="/" component={MainPage}></Route>
             <Route exact path='/main' component={MainPage} />
             <Route exact path='/contact' component={ContactPage} />
             <Route exact path='/portfolio' component={PortfolioPage} />

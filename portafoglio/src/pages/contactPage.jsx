@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+// import Navbar from '../components/Header';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 
@@ -7,7 +7,7 @@ const ContactPage = () => {
 
     return (
         <div>
-            <Navbar />
+            {/* <Navbar /> */}
             <Header />
             {/* <ul>
                 {["I ", "am a ", "Coder"].map((contact, idx) => {
