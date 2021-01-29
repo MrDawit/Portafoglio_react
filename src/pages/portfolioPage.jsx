@@ -11,7 +11,7 @@ const ProjectListPage = () => {
     return (
 
         <>
-        <div className="body">
+        <div className="bod">
             {/* <Navbar /> */}
             <Header />
 

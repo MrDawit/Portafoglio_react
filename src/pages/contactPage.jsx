@@ -1,5 +1,6 @@
 import React from 'react';
 // import Navbar from '../components/Header';
+import Spacer from '../components/Spacer';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import "../assets/css/contactPage.css";
@@ -7,7 +8,7 @@ import "../assets/css/contactPage.css";
 const ContactPage = () => {
 
     return (
-        <div className="body">
+        <div className="bod">
             <Header />
             {/* <ul>
                 {["I ", "am a ", "Coder"].map((contact, idx) => {
@@ -17,9 +18,7 @@ const ContactPage = () => {
 
             <main className="col-xs-12 col-lg-10">
 
-                <div className="">
-                    <div className="">
-                        <div className="">
+               
                             <h1>Contact</h1>
                             <form>
                                 <label for="name">Name:</label>
@@ -47,11 +46,10 @@ const ContactPage = () => {
                                     </a>
                                 </div>
                             </form>
-                        </div>
-                    </div>
-                </div>
+                        
+                   
             </main>
-
+<Spacer/>
             <Footer />
         </div>
     )
