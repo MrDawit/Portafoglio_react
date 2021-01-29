@@ -27,7 +27,7 @@
 
 
 footer{
-  position:fixed;
+  position:sticky;
   bottom:0;
   right:5%;
   text-align:center;
@@ -44,5 +44,7 @@ footer{
 #box{
   /* background-image: url("../../assets/img/bgimage.jpg"); */
    background-color:blueviolet;
+
+   /* margin: 0 0 100px; */
     /* background-image:repeat; */
 }
