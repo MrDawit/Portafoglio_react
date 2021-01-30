@@ -1,6 +1,6 @@
 import React from 'react';
 // import Navbar from '../components/Header';
-import Header from "../components/Header";
+import Header from "../components/Navbar";
 import Footer from '../components/Footer';
 import ProjectList from '../components/Project-List';
 import { ProjectProvider } from "../utils/ProjectContext";

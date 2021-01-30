@@ -29,8 +29,8 @@
 footer{
   position:sticky;
   bottom:0;
-  right:5%;
-  text-align:center;
+  /* right:5% !important; */
+  text-align:right;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-color:gold;
   border-style:solid;

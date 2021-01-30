@@ -3,7 +3,7 @@ import "./style.css";
 import { Link } from 'react-router-dom';
 
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
-function Header() {
+function Navbar() {
   return (
     <nav class="navbar">
                 <h2>Shalom Dawit</h2>
@@ -16,4 +16,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navbar;
