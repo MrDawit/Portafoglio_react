@@ -11,7 +11,7 @@ import {
     } from 'react-router-dom';
 
 //Pages
-import MainPage from './pages';
+import MainPage from './pages/aboutPage';
 import NotFoundPage from './pages/404';
 import ContactPage from './pages/contactPage';
 import PortfolioPage from './pages/portfolioPage';

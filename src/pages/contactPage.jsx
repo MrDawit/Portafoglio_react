@@ -1,14 +1,14 @@
 import React from 'react';
 // import Navbar from '../components/Header';
 import Footer from '../components/Footer';
-import Header from '../components/Navbar';
+import Navbar from '../components/Navbar';
 import "../assets/css/contactPage.css";
 
 const ContactPage = () => {
 
     return (
         <div className="bod">
-            <Header />
+            <Navbar />
             {/* <ul>
                 {["I ", "am a ", "Coder"].map((contact, idx) => {
                     return <li key={idx}>{contact}</li>

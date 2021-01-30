@@ -1,15 +1,15 @@
 import React from 'react';
 // import Navbar from '../components/Header';
-import Header from '../components/Navbar';
+import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import "../assets/css/index.css";
+import "../assets/css/aboutPage.css";
 
-const MainPage = () => {
+const AboutPage = () => {
 
     return (
         <>
             <div className="bod">
-                <Header />
+                <Navbar />
                 <main className="col-xs-12 col-lg-10">
 
                     <div>
@@ -24,12 +24,12 @@ const MainPage = () => {
                     </div>
 
                 </main>
-           
-            </div>
-            <Footer />
 
+
+                <Footer />
+            </div>
         </>
     );
 };
 
-export default MainPage;
+export default AboutPage;
