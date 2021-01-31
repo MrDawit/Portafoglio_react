@@ -16,7 +16,10 @@ import NotFoundPage from './pages/404';
 import ContactPage from './pages/contactPage';
 import PortfolioPage from './pages/portfolioPage';
 
-
+//Components
+import Navbar from './components/Navbar';
+import Spacer from './components/Spacer';
+import Footer from './components/Footer';
 import ProjectList from './components/Project-List';
 import {ProjectProvider} from "./utils/ProjectContext";
 
@@ -26,7 +29,11 @@ import {ProjectProvider} from "./utils/ProjectContext";
 
 class App extends Component {
     render() {
-        return <Router>
+        return (
+            <div class='bod'>
+           
+        <Router>
+        <Navbar/>
             <ProjectProvider>
             <Switch>
             {/* <Route exact path="/" component={ProjectList}></Route>
@@ -40,9 +47,11 @@ class App extends Component {
             <Redirect to='/404' />
             </Switch> 
             </ProjectProvider>
-        </Router>;
-        
-    }
+        </Router>
+        <Spacer/>
+        <Footer/>
+        </div>
+    )}
 }
 
 export default App;

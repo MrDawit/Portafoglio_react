@@ -1,11 +1,10 @@
 import React from "react";
 import "./style.css";
-import Spacer from "../Spacer"
+
 function Footer() {
   return (
   
     <>
-   <Spacer/>
     <footer>
     <div id="text">Created By SD_WORKS</div>
     <div id="image">

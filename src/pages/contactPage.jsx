@@ -8,7 +8,7 @@ const ContactPage = () => {
 
     return (
         <div className="bod">
-            <Navbar />
+            {/* <Navbar /> */}
             {/* <ul>
                 {["I ", "am a ", "Coder"].map((contact, idx) => {
                     return <li key={idx}>{contact}</li>
@@ -49,7 +49,7 @@ const ContactPage = () => {
                    
             </main>
 
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 };

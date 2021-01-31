@@ -5,13 +5,12 @@ function Spacer() {
   return (
   
     <>
-    <div id="box">
+  <div>
     
-    <div id="image_spacer">
-       <img src={require("../../assets/img/spacer.jpg").default} alt={"spacer"}/>
+    {/* <div id="image_spacer"> */}
+       <img id="image_spacer" src={require("../../assets/img/spacer.jpg").default} alt={"spacer"}/>
     </div>
 
-</div>
 </>
   );
 }

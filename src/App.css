@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.bod{
+  background-image: url("./assets/img/bgimage.jpg");
+  /*  background-color:blueviolet; */
+    background-image:repeat;
+}

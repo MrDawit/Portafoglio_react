@@ -1,6 +1,6 @@
 import React from 'react';
-// import Navbar from '../components/Header';
 import Navbar from '../components/Navbar';
+import Spacer from '../components/Spacer';
 import Footer from '../components/Footer';
 import "../assets/css/aboutPage.css";
 
@@ -9,7 +9,7 @@ const AboutPage = () => {
     return (
         <>
             <div className="bod">
-                <Navbar />
+                {/* <Navbar /> */}
                 <main className="col-xs-12 col-lg-10">
 
                     <div>
@@ -24,9 +24,9 @@ const AboutPage = () => {
                     </div>
 
                 </main>
+{/* <Spacer/>
 
-
-                <Footer />
+                <Footer /> */}
             </div>
         </>
     );
