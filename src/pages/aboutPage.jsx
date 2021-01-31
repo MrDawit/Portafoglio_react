@@ -24,9 +24,9 @@ const AboutPage = () => {
                     </div>
 
                 </main>
-{/* <Spacer/>
+<Spacer/>
 
-                <Footer /> */}
+              {/*  <Footer /> */}
             </div>
         </>
     );

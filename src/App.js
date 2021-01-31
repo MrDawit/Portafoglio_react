@@ -48,7 +48,7 @@ class App extends Component {
             </Switch> 
             </ProjectProvider>
         </Router>
-        <Spacer/>
+        
         <Footer/>
         </div>
     )}

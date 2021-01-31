@@ -1,5 +1,6 @@
 import React from 'react';
 // import Navbar from '../components/Header';
+import Spacer from '../components/Spacer';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import "../assets/css/contactPage.css";
@@ -48,7 +49,7 @@ const ContactPage = () => {
                         
                    
             </main>
-
+<Spacer/>
             {/* <Footer /> */}
         </div>
     )
