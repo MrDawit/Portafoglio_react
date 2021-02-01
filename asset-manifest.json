@@ -1,29 +1,31 @@
 {
   "files": {
-    "main.css": "/Portafoglio_react/static/css/main.27481fc5.chunk.css",
-    "main.js": "/Portafoglio_react/static/js/main.a280a463.chunk.js",
-    "main.js.map": "/Portafoglio_react/static/js/main.a280a463.chunk.js.map",
-    "runtime-main.js": "/Portafoglio_react/static/js/runtime-main.0b1bcd94.js",
-    "runtime-main.js.map": "/Portafoglio_react/static/js/runtime-main.0b1bcd94.js.map",
-    "static/js/2.a13f9df4.chunk.js": "/Portafoglio_react/static/js/2.a13f9df4.chunk.js",
-    "static/js/2.a13f9df4.chunk.js.map": "/Portafoglio_react/static/js/2.a13f9df4.chunk.js.map",
-    "static/js/3.612153c8.chunk.js": "/Portafoglio_react/static/js/3.612153c8.chunk.js",
-    "static/js/3.612153c8.chunk.js.map": "/Portafoglio_react/static/js/3.612153c8.chunk.js.map",
+    "main.css": "/Portafoglio_react/static/css/main.4b576dd7.chunk.css",
+    "main.js": "/Portafoglio_react/static/js/main.675f1575.chunk.js",
+    "main.js.map": "/Portafoglio_react/static/js/main.675f1575.chunk.js.map",
+    "runtime-main.js": "/Portafoglio_react/static/js/runtime-main.8e754346.js",
+    "runtime-main.js.map": "/Portafoglio_react/static/js/runtime-main.8e754346.js.map",
+    "static/js/2.17bd735c.chunk.js": "/Portafoglio_react/static/js/2.17bd735c.chunk.js",
+    "static/js/2.17bd735c.chunk.js.map": "/Portafoglio_react/static/js/2.17bd735c.chunk.js.map",
+    "static/js/3.198c1ba1.chunk.js": "/Portafoglio_react/static/js/3.198c1ba1.chunk.js",
+    "static/js/3.198c1ba1.chunk.js.map": "/Portafoglio_react/static/js/3.198c1ba1.chunk.js.map",
     "index.html": "/Portafoglio_react/index.html",
-    "static/css/main.27481fc5.chunk.css.map": "/Portafoglio_react/static/css/main.27481fc5.chunk.css.map",
-    "static/js/2.a13f9df4.chunk.js.LICENSE.txt": "/Portafoglio_react/static/js/2.a13f9df4.chunk.js.LICENSE.txt",
+    "static/css/main.4b576dd7.chunk.css.map": "/Portafoglio_react/static/css/main.4b576dd7.chunk.css.map",
+    "static/js/2.17bd735c.chunk.js.LICENSE.txt": "/Portafoglio_react/static/js/2.17bd735c.chunk.js.LICENSE.txt",
     "static/media/AllUCanBurger.png": "/Portafoglio_react/static/media/AllUCanBurger.86b25cfa.png",
     "static/media/PIC.JPG": "/Portafoglio_react/static/media/PIC.db21812a.JPG",
     "static/media/contactPage.css": "/Portafoglio_react/static/media/bgimage.9c257469.jpg",
+    "static/media/App.css": "/Portafoglio_react/static/media/bladesingertitle.a5c0a1d5.ttf",
     "static/media/covid19_info.png": "/Portafoglio_react/static/media/covid19_info.4cd9d2ed.png",
     "static/media/favicon.ico": "/Portafoglio_react/static/media/favicon.2aeb8764.ico",
+    "static/media/globe3.png": "/Portafoglio_react/static/media/globe3.ad968eed.png",
     "static/media/main.png": "/Portafoglio_react/static/media/main.e1186d16.png",
     "static/media/spacer.jpg": "/Portafoglio_react/static/media/spacer.88cd4a07.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0b1bcd94.js",
-    "static/js/2.a13f9df4.chunk.js",
-    "static/css/main.27481fc5.chunk.css",
-    "static/js/main.a280a463.chunk.js"
+    "static/js/runtime-main.8e754346.js",
+    "static/js/2.17bd735c.chunk.js",
+    "static/css/main.4b576dd7.chunk.css",
+    "static/js/main.675f1575.chunk.js"
   ]
 }
