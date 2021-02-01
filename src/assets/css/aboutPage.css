@@ -4,9 +4,9 @@
       background-image:repeat;
 }
 #purple{
-    box-shadow: 0 5px rgb(253, 142, 253);
+    box-shadow: 0 5px grey;
     border-radius:95%;
-    background-color:purple;
+    background-color:rgb(75, 81, 177);
     float:left;
     color:silver;
     text-decoration:none; 
