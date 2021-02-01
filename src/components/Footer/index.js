@@ -5,14 +5,12 @@ function Footer() {
   return (
   
     <>
-    <div id="outer_footer">
-    <footer>
-    <div id="text">Created By SD_WORKS</div>
+    <footer id="outer_footer">
+    <div id="texting">Created By SD_WORKS</div>
     <div id="image">
        <img src={require("../../assets/img/favicon.ico").default} alt={"juju"}/> 12/20
     </div>
 </footer>
-</div>
 </>
   );
 }
