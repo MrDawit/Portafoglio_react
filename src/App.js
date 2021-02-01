@@ -18,9 +18,8 @@ import PortfolioPage from './pages/portfolioPage';
 
 //Components
 import Navbar from './components/Navbar';
-import Spacer from './components/Spacer';
 import Footer from './components/Footer';
-import ProjectList from './components/Project-List';
+// import ProjectList from './components/Project-List';
 import {ProjectProvider} from "./utils/ProjectContext";
 
 

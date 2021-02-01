@@ -1,7 +1,5 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 import Spacer from '../components/Spacer';
-import Footer from '../components/Footer';
 import "../assets/css/aboutPage.css";
 
 const AboutPage = () => {

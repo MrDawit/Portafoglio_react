@@ -1,8 +1,5 @@
 import React from 'react';
-// import Navbar from '../components/Header';
 import Spacer from '../components/Spacer';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
 import "../assets/css/contactPage.css";
 
 const ContactPage = () => {
@@ -37,12 +34,12 @@ const ContactPage = () => {
                                 <div id="contact_links"><img alt="LinkedIn_Image" src={require("../assets/img/icon-linkedin.png").default} />
                                     <a href="https://www.linkedin.com/in/shalom-dawit-a0a5a4126"
                                         target="_blank" rel="noreferrer">
-                                        https://www.linkedin.com/in/shalom-dawit-a0a5a4126
+                                        Linkedin.com/in/Shalom-Dawit-a0a5a4126
                                     </a>
                                     <br/>
                                     <img alt="Github_Image" src={require("../assets/img/github-logo.png").default} />
                                     <a href={"https://github.com/MrDawit"} target="_blank" rel="noreferrer">
-                                        https://github.com/MrDawit
+                                        Github.com/MrDawit
                                     </a>
                                 </div>
                             </form>

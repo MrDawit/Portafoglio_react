@@ -1,7 +1,4 @@
 import React from 'react';
-// import Navbar from '../components/Header';
-import Navbar from "../components/Navbar";
-import Footer from '../components/Footer';
 import ProjectList from '../components/Project-List';
 import { ProjectProvider } from "../utils/ProjectContext";
 import "../assets/css/portfolioPage.css";
@@ -12,9 +9,6 @@ const ProjectListPage = () => {
 
         <>
         <div className="bod">
-            {/* <Navbar /> */}
-            {/* <Navbar /> */}
-
             <main>
                 <ProjectProvider>
                     <ProjectList/>
