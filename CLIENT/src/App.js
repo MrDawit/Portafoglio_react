@@ -27,9 +27,10 @@ import {ProjectProvider} from "./utils/ProjectContext";
 
 
 class App extends Component {
+
     render() {
         return (
-            <div class='bod'>
+            <div className='bod'>
            
         <Router>
         <Navbar/>

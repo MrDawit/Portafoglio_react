@@ -3,7 +3,7 @@ import Spacer from '../components/Spacer';
 import "../assets/css/aboutPage.css";
 
 const AboutPage = () => {
-
+    
     return (
         <>
             <div className="bod">

@@ -4,7 +4,7 @@ import Spacer from '../components/Spacer';
 import "../assets/css/contactPage.css";
 
 const ContactPage = () => {
-
+    
     return (
         <div className="bod">
             {/* <Navbar /> */}

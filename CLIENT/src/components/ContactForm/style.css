@@ -1,0 +1,21 @@
+#submitBtn{
+    background-color:white;
+    color:black;
+}
+
+#submitBtn:hover{
+background-color:rgb(130, 132, 175) ;
+color:black;
+/* box-shadow: inset 0 -3px 0 0 black; */
+
+/* box-sizing: border-box; */
+
+}
+
+/* #submitBtnContainer{
+    -webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-ms-backface-visibility: hidden;
+backface-visibility: hidden;
+box-sizing: border-box;
+} */

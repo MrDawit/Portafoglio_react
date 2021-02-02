@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navbar() {
   return (
-    <nav class="navbar">
+    <nav className="navbar">
                 <h2>Shalom Dawit</h2>
                 <form>
                 <Link id="red" to="/main">ABOUT</Link>               

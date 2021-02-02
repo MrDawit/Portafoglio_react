@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectLink from "../Project-Links";
 import "./style.css"
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 
 const ProjectCard = ({id,name,description_short,GitHubRepo,imageURL,deployURL }) =>{
 
