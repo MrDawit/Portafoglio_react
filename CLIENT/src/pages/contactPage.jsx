@@ -5,7 +5,9 @@ import "../assets/css/contactPage.css";
 import axios from 'axios';
 
 const ContactPage = () => {
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
     const submitRequest = async event => {
         event.preventDefault();
@@ -26,7 +28,7 @@ const ContactPage = () => {
         // } catch (error) {
         //     console.log(error);
         // }
-axios.post('/api/contact',{ email, message })
+axios.post('/api/contact',{ name,email, subject, message })
 
 
     };
@@ -75,22 +77,26 @@ axios.post('/api/contact',{ email, message })
                 <form  onSubmit={submitRequest}>
             <label >Name:</label>
             <br />
-            <input type="text" id="name" name="user" />
+            <input type="text" id="name" name="name" onChange={e => setName(e.target.value)}
+              value={name}/>
             <br />
             <label >Email:</label>
             <br />
             <input type="text" id="email" name="email"  onChange={e => setEmail(e.target.value)}
               value={email}
-              
               />
-
             <br />
+            <label >Subject:</label>
+            <br />
+            <input type="text" id="subject" name="subject"  onChange={e => setSubject(e.target.value)}
+              value={subject}
+              />
+              <br />
             <label >Message:</label>
             <br />
-            <input id="message" type="text" name="message" cols="40" 
+            <textarea id="message" type="text" name="message" cols="40" 
             onChange={e => setMessage(e.target.value)}
             value={message}
-            
             />
             
             <br />

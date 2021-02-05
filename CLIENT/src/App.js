@@ -4,8 +4,8 @@ import './App.css';
 
 
 import { 
-    // HashRouter as Router, 
-    BrowserRouter as Router,
+    HashRouter as Router, 
+    // BrowserRouter as Router,
       Route, 
       Switch, 
       Redirect 
@@ -36,21 +36,21 @@ class App extends Component {
            
         <Router>
         <Navbar/>
-            {/* <ProjectProvider> */}
+            <ProjectProvider>
             <Switch>
             {/* <Route exact path="/" component={ProjectList}></Route>
             <Route exact path="/react-portfolio" component={ProjectList}></Route> */}
 
-            <Route exact path="/" component={ContactPage}/>
-            {/* <Route exact path='/main' component={MainPage} /> */}
+            <Route exact path="/" component={MainPage}/>
+            <Route exact path='/main' component={MainPage} />
             
             <Route exact path='/contact' component={ContactPage} />
-            {/* <Route exact path='/portfolio' component={PortfolioPage} />
+            <Route exact path='/portfolio' component={PortfolioPage} />
            
             <Route exact path ='/404' component={NotFoundPage} />
-            <Redirect to='/404' /> */}
+            <Redirect to='/404' />
             </Switch> 
-            {/* </ProjectProvider> */}
+            </ProjectProvider>
         </Router>
         <Footer/>
         </div>

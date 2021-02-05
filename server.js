@@ -61,10 +61,10 @@ if (process.env.NODE_ENV === 'production') {
 // })
 
 app.post("/api/contact", function (req, res) {
-  console.log("tester: "+req.body);
+  console.log("Request Object: "+JSON.stringify(req.body));
   // console.log(req.body);
 
-
+// res.send(console.log("u da best!"));
 
 async function main() {
   // create reusable transporter object using the default SMTP transport
@@ -84,15 +84,15 @@ async function main() {
   });
   // send mail with defined transport object
   let info = await transporter.sendMail({
-    from: `'Recipe Track App' <recipe.tracker.app@gmail.com>`, // sender address
+    from: `'Recipe Track App' <${req.body.email}>`, // sender address
     to: `'Contacts' <recipe.tracker.app@gmail.com>`, // list of receivers,MUST BE VALID email
-    subject: "test", // Subject line
-    text: "testing 1,2,3", // plain text body
-      html: "just a test",
-  //   html: `<p>Contact Name: <b>${req.body.name}</b></p></br>
-  //         <p>Contact Info: <b>${req.body.contactInfo}</b></p></br>
-  //         <p>Category: ${req.body.category}</p></br>
-  //         <p>Message: ${req.body.content}</p>`, // html body
+    subject: `${req.body.subject}`, // Subject line
+    text: `${req.body.message}`, // plain text body
+      // html: "just a test",
+    html: `<p>Contact Name: <b>${req.body.name}</b></p></br>
+          <p>Contact Info: <b>${req.body.email}</b></p></br>
+          <p>Subject: ${req.body.subject}</p></br>
+          <p>Message: ${req.body.message}</p>`, // html body
   });
   console.log("Message sent: %s", info.messageId);
 }
@@ -107,7 +107,7 @@ main().catch(console.error);
 
 // app.use(express.static('public'));
 
-console.log("does this work?");
+// console.log("does this work?");
 // // serve PORT running here
 const PORT = process.env.PORT || 8080
 app.listen(PORT, () => console.info(`server has started on ${PORT}`))
