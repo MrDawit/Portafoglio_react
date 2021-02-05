@@ -2,11 +2,12 @@
 // require("dotenv");
 const express = require("express");
 const bodyParser = require("body-parser");
+const cookieParser = require("cookie-parser");
 // const cors = require("cors");
 
  const app = express();
 
-// const nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer');
 
 // const path = require('path');
 
@@ -18,15 +19,15 @@ const bodyParser = require("body-parser");
 // app.use(cors(corsOptions));
 // parse requests of content-type - application/json
 
-app.use(bodyParser.json());
+
 
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
-
-
+app.use(bodyParser.json());
+app.use(cookieParser());
 // app.use(express.urlencoded({ extended: true }));
 
-app.use(express.json());
+// app.use(express.json());
 
 // app.use(express.static("public"));
 // ADDED API ROUTE
@@ -65,37 +66,37 @@ app.post("/api/contact", function (req, res) {
 
 
 
-// async function main() {
-//   // create reusable transporter object using the default SMTP transport
-//   let transporter = nodemailer.createTransport({
-//       // service: 'Gmail',
-//     host: "smtp.gmail.com",
-//     port: 465,
-//     secure: true, // true for 465, false for other ports
-//     auth: {
-//       user: "recipe.tracker.app@gmail.com",
-//       pass: "EricLuis",
-//     },
-//     tls: {
-//       // do not fail on invalid certs
-//       rejectUnauthorized: false
-//     }
-//   });
-//   // send mail with defined transport object
-//   let info = await transporter.sendMail({
-//     from: `'Recipe Track App' <recipe.tracker.app@gmail.com>`, // sender address
-//     to: `'Contacts' <recipe.tracker.app@gmail.com>`, // list of receivers,MUST BE VALID email
-//     subject: "test", // Subject line
-//     text: "testing 1,2,3", // plain text body
-//       html: "just a test",
-//   //   html: `<p>Contact Name: <b>${req.body.name}</b></p></br>
-//   //         <p>Contact Info: <b>${req.body.contactInfo}</b></p></br>
-//   //         <p>Category: ${req.body.category}</p></br>
-//   //         <p>Message: ${req.body.content}</p>`, // html body
-//   });
-//   console.log("Message sent: %s", info.messageId);
-// }
-// main().catch(console.error);
+async function main() {
+  // create reusable transporter object using the default SMTP transport
+  let transporter = nodemailer.createTransport({
+      // service: 'Gmail',
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true, // true for 465, false for other ports
+    auth: {
+      user: "recipe.tracker.app@gmail.com",
+      pass: "EricLuis",
+    },
+    tls: {
+      // do not fail on invalid certs
+      rejectUnauthorized: false
+    }
+  });
+  // send mail with defined transport object
+  let info = await transporter.sendMail({
+    from: `'Recipe Track App' <recipe.tracker.app@gmail.com>`, // sender address
+    to: `'Contacts' <recipe.tracker.app@gmail.com>`, // list of receivers,MUST BE VALID email
+    subject: "test", // Subject line
+    text: "testing 1,2,3", // plain text body
+      html: "just a test",
+  //   html: `<p>Contact Name: <b>${req.body.name}</b></p></br>
+  //         <p>Contact Info: <b>${req.body.contactInfo}</b></p></br>
+  //         <p>Category: ${req.body.category}</p></br>
+  //         <p>Message: ${req.body.content}</p>`, // html body
+  });
+  console.log("Message sent: %s", info.messageId);
+}
+main().catch(console.error);
 });
 
 // var router = express.Router();
