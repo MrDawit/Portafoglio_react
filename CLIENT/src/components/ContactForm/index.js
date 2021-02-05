@@ -3,52 +3,63 @@ import React, {useState} from "react";
 import "./style.css";
 
 function ContactForm() {
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+    const[name, setName] = useState('');
+       const [email, setEmail] = useState('');
+     const [message, setMessage] = useState('');
     const submitRequest = async (e) => {
-        e.preventDefault();
-        console.log({ email, message });
-        const response = await fetch("/access", { 
-          method: 'POST', 
-          headers: { 
-              'Content-type': 'application/json'
-          }, 
-          body: JSON.stringify({email, message}) 
-      }); 
-        const resData = await response.json(); 
-        if (resData.status === 'success'){
-          alert("Message Sent."); 
-          this.resetForm()
-      }else if(resData.status === 'fail'){
-          alert("Message failed to send.")
-      }
-      };
+             e.preventDefault();
+             console.log({ name, email, message });
+            var data={ name, email, message };
+             const url = '/api/contact';
+             const options = {
+               method: 'POST',
+               headers: {
+                 //DOES NOT WORK WITH THIS KEY AND VALUE
+                 'Accept': 'application/json',
+                 'Content-Type': 'application/json'
+               },
+               body: JSON.stringify(data)
+              // body:data
+             };
+             
+             fetch(url, options)
+               .then(response => {
+                 console.log(response.status);
+               })
+              .then(response => response.json())
+               .then(function(data) {
+                console.log(data);
+               })
+    };
+
     return (
-        <form onSubmit={submitRequest}>
+        <form  onSubmit={submitRequest}>
             <label htmlFor="name">Name:</label>
             <br />
-            <input type="text" id="name" name="name" />
+            <input type="json" id="name" name="name" onChange={e => setName(e.target.value)} 
+            value={name}/>
+            <br />
             <br />
             <label htmlFor="email">Email:</label>
             <br />
-            <input type="text" id="email" name="email"  onChange={e => setEmail(e.target.value)}
+            <input type="json" id="email" name="email"  onChange={e => setEmail(e.target.value)}
               value={email}
               required
               />
-
+             <br />
             <br />
             <label htmlFor="message">Message:</label>
             <br />
-            <textarea id="message" name="message" cols="40" 
+            <textarea id="message" type="json" name="message" cols="40" 
             onChange={e => setMessage(e.target.value)}
             value={message}
             required
-            ></textarea>
+            />
             
             <br />
-            {/* <div id="submitBtnContainer"> */}
-            <input id="submitBtn" type="submit" value="SUBMIT" />
-            {/* </div> */}
+         
+            <input id="submitBtn" type="submit" value="Submit"/>
+          
             <br /><br />
             <div id="contact_links"><img alt="LinkedIn_Image" src={require("../../assets/img/icon-linkedin.png").default} />
                 <a href="https://www.linkedin.com/in/shalom-dawit-a0a5a4126"

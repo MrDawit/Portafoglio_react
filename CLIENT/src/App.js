@@ -4,7 +4,8 @@ import './App.css';
 
 
 import { 
-    HashRouter as Router, 
+    // HashRouter as Router, 
+    BrowserRouter as Router,
       Route, 
       Switch, 
       Redirect 
@@ -20,6 +21,7 @@ import PortfolioPage from './pages/portfolioPage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 // import ProjectList from './components/Project-List';
+//was working pre-nodemailer form issue
 import {ProjectProvider} from "./utils/ProjectContext";
 
 
@@ -34,21 +36,22 @@ class App extends Component {
            
         <Router>
         <Navbar/>
-            <ProjectProvider>
+            {/* <ProjectProvider> */}
             <Switch>
             {/* <Route exact path="/" component={ProjectList}></Route>
             <Route exact path="/react-portfolio" component={ProjectList}></Route> */}
-            <Route exact path="/" component={MainPage}></Route>
-            <Route exact path='/main' component={MainPage} />
+
+            <Route exact path="/" component={ContactPage}/>
+            {/* <Route exact path='/main' component={MainPage} /> */}
+            
             <Route exact path='/contact' component={ContactPage} />
-            <Route exact path='/portfolio' component={PortfolioPage} />
+            {/* <Route exact path='/portfolio' component={PortfolioPage} />
            
             <Route exact path ='/404' component={NotFoundPage} />
-            <Redirect to='/404' />
+            <Redirect to='/404' /> */}
             </Switch> 
-            </ProjectProvider>
+            {/* </ProjectProvider> */}
         </Router>
-        
         <Footer/>
         </div>
     )}

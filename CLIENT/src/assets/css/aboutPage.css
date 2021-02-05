@@ -64,7 +64,9 @@ h1 span{
     text-decoration:double underline;
     text-decoration-color: indigo;
 }
-
+ span{
+     font-weight: bold;
+ }
 
 @media screen and (max-width:768px) {
     main{padding-top:5rem!important;
