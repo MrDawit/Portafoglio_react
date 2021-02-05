@@ -1,37 +1,19 @@
-import React,{useState} from 'react';
-// import ContactForm from '../components/ContactForm';
+import React from 'react';
+import ContactForm from '../components/ContactForm';
 import Spacer from '../components/Spacer';
 import "../assets/css/contactPage.css";
-import axios from 'axios';
+// import axios from 'axios';
 
 const ContactPage = () => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [subject, setSubject] = useState('');
-    const [message, setMessage] = useState('');
-    const submitRequest = async event => {
-        event.preventDefault();
-        // try {
-        //     await fetch(`/api/contact`, {
-        //         method: 'post',
-        //         headers: {
-                    
-        //             'Content-Type': 'application/json;charset=UTF-8'
-        //         },
-        //         body: JSON.stringify({
-        //             email,
-        //             message
-        //         })
-        //     })
-        //         .then(response => console.log(response))
-        //         .catch(err => console.log(err))
-        // } catch (error) {
-        //     console.log(error);
-        // }
-axios.post('/api/contact',{ name,email, subject, message })
-
-
-    };
+    // const [name, setName] = useState('');
+    // const [email, setEmail] = useState('');
+    // const [subject, setSubject] = useState('');
+    // const [message, setMessage] = useState('');
+    // const submitRequest = async event => {
+    //     event.preventDefault();
+    //sending the request through axios also works nicely
+// axios.post('/api/contact',{ name,email, subject, message })
+    // };
 
 //WORKS
 // const [email, setEmail] = useState('');
@@ -71,9 +53,9 @@ axios.post('/api/contact',{ name,email, subject, message })
 
 
                 <h1>Contact</h1>
-                {/* <ContactForm /> */}
+                <ContactForm />
 
-                        {/* WORKS */}
+                        {/* WORKS
                 <form  onSubmit={submitRequest}>
             <label >Name:</label>
             <br />
@@ -102,7 +84,7 @@ axios.post('/api/contact',{ name,email, subject, message })
             <br />
          
             <input id="submitBtn" type="submit" value="Submit"/>
-            </form>
+            </form> */}
 
 
 
