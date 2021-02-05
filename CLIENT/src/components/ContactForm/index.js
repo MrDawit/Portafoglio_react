@@ -7,6 +7,7 @@ function ContactForm() {
   const [contactWay, setContactWay] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  // const [confirmation, setConfirmation] = useState("");
   const submitRequest = async (e) => {
     e.preventDefault();
     console.log({ name, contactWay, message });
@@ -15,12 +16,12 @@ function ContactForm() {
     const options = {
       method: 'POST',
       headers: {
-        //DOES NOT WORK WITH THIS KEY AND VALUE
+        
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(data)
-      // body:data
+      
     };
 
     fetch(url, options)
@@ -32,6 +33,15 @@ function ContactForm() {
         console.log(data);
       })
   };
+
+  function refreshPage() {
+    window.location.reload(false);
+  }
+// function emailCompletion(){
+ 
+//  console.log(confirmation);
+
+// }
 
   return (
     <form onSubmit={submitRequest}>
@@ -61,7 +71,10 @@ function ContactForm() {
         required
       />
       <br />
-      <input id="submitBtn" type="submit" value="Submit" />
+      {/* Deprecated Page Refresh */}
+      <input id="submitBtn" type="submit" value="Submit" onClick={refreshPage}/>
+     
+      {/* <input id="submitBtn" type="submit" value="Submit" onClick={emailCompletion}/> */}
       <br /><br />
       <div id="contact_links"><img alt="LinkedIn_Image" src={require("../../assets/img/icon-linkedin.png").default} />
         <a href="https://www.linkedin.com/in/shalom-dawit-a0a5a4126"
@@ -73,6 +86,7 @@ function ContactForm() {
         <a href={"https://github.com/MrDawit"} target="_blank" rel="noreferrer">
           Github.com/MrDawit
         </a>
+        {/* <div onChange={e => setConfirmation("Email Has Been Sent!")}/> */}
       </div>
     </form>
   );
