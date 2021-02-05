@@ -33,7 +33,7 @@ module.exports = function (app) {
           text: `${req.body.message}`, // plain text body
             // html: "just a test",
           html: `<p>Contact Name: <b>${req.body.name}</b></p></br>
-                <p>Contact Info: <b>${req.body.email}</b></p></br>
+                <p>Contact Info: <b>${req.body.contactWay}</b></p></br>
                 <p>Subject: ${req.body.subject}</p></br>
                 <p>Message: ${req.body.message}</p>`, // html body
         });
