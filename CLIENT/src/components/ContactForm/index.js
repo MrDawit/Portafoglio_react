@@ -44,14 +44,18 @@ function ContactForm() {
       setContactWay('');
       setSubject('');
       setMessage('');
+
+
     }else{
-      //clearing form
+      //changing state
       setConfirmationOther(true);
       setConfirmationSuccess(false);
+      //clearing form
       setName('');
       setContactWay('');
       setSubject('');
       setMessage('');
+      
 
     };
   
@@ -85,7 +89,7 @@ function ContactForm() {
     {/* change response components to bootstrap arrangement to the right side of ContactForm */}
       { confirmationSuccess && <ResultSuccess />}
       {confirmationOther && <ResultOther />}
-      <form onSubmit={submitRequest}>
+      <form id="contactForm" onSubmit={submitRequest}>
         <label htmlFor="name">Name:</label>
         <br />
         <input type="text" id="name" name="name" placeholder="ENTER YOUR NAME" onChange={e => setName(e.target.value)}
@@ -93,7 +97,7 @@ function ContactForm() {
         <br />
         <label htmlFor="contactWay">Contact Info:</label>
         <br />
-        <input type="text" id="contactWay" name="contactWay" placeholder="EMAIL, PHONE #, ETC.." onChange={e => setContactWay(e.target.value)}
+        <input type="text" id="contactWay" name="contactWay" placeholder="EMAIL,PHONE #,ETC..(req'd)" onChange={e => setContactWay(e.target.value)}
           value={contactWay}
           required
         />
@@ -106,7 +110,7 @@ function ContactForm() {
         <br />
         <label htmlFor="message">Message:</label>
         <br />
-        <textarea id="message" type="text" name="message" placeholder="WRITE YOUR MESSAGE" cols="40"
+        <textarea id="message" type="text" name="message" placeholder="WRITE YOUR MESSAGE (req'd)" cols="40"
           onChange={e => setMessage(e.target.value)}
           value={message}
           required
@@ -119,17 +123,17 @@ function ContactForm() {
         <input id="submitBtn" type="submit" value="Submit" />
         {/* <input id="submitBtn" type="submit" value="Submit" onClick={emailCompletion}/> */}
         <br /><br />
-        <div id="contact_links"><img alt="LinkedIn_Image" src={require("../../assets/img/icon-linkedin.png").default} />
+        <div id="contact_links">
+          <div id="linksDirection">Click Links Below:</div>
           <a href="https://www.linkedin.com/in/shalom-dawit-a0a5a4126"
             target="_blank" rel="noreferrer">
-            Linkedin.com/in/Shalom-Dawit-a0a5a4126
+            <img alt="LinkedIn_Image" src={require("../../assets/img/icon-linkedin.png").default} />
         </a>
           <br />
-          <img alt="Github_Image" src={require("../../assets/img/github-logo.png").default} />
+         
           <a href={"https://github.com/MrDawit"} target="_blank" rel="noreferrer">
-            Github.com/MrDawit
-        </a>
-          {/* <div onChange={e => setConfirmation("Email Has Been Sent!")}/> */}
+          <img alt="Github_Image" src={require("../../assets/img/github-logo.png").default} />
+          </a>
         </div>
       </form>
     </>

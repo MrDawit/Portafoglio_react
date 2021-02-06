@@ -51,7 +51,7 @@ module.exports = function (app) {
                 })
                 console.log(`Error Code: ${err.code}`);
             }else{
-                console.log("Message sent: " + res.message);
+                console.log(`Message sent: ${res.messageId}`);
                 //Object being sent back on SUCCESSFUL completion of email being sent
                 response.json({
                     status:'SENT'
