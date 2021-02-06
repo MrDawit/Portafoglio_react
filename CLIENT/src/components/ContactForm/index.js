@@ -1,13 +1,16 @@
 
 import React, { useState } from "react";
 import "./style.css";
+import Results from "../Results/index.js";
 
 function ContactForm() {
   const [name, setName] = useState('');
   const [contactWay, setContactWay] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
-  // const [confirmation, setConfirmation] = useState("");
+  const [confirmation, setConfirmation] = useState(false);
+
+
   const submitRequest = async (e) => {
     e.preventDefault();
     console.log({ name, contactWay, message });
@@ -34,9 +37,9 @@ function ContactForm() {
       })
   };
 
-  function refreshPage() {
-    window.location.reload(false);
-  }
+  // function refreshPage() {
+  //   window.location.reload(false);
+  // }
 // function emailCompletion(){
  
 //  console.log(confirmation);
@@ -44,6 +47,8 @@ function ContactForm() {
 // }
 
   return (
+    <>
+    { confirmation && <Results/>}
     <form onSubmit={submitRequest}>
       <label htmlFor="name">Name:</label>
       <br />
@@ -72,8 +77,8 @@ function ContactForm() {
       />
       <br />
       {/* Deprecated Page Refresh */}
-      <input id="submitBtn" type="submit" value="Submit" onClick={refreshPage}/>
-     
+      {/* <input id="submitBtn" type="submit" value="Submit" onClick={refreshPage}/> */}
+      <input id="submitBtn" type="submit" value="Submit" onClick={() => setConfirmation(true)}/>
       {/* <input id="submitBtn" type="submit" value="Submit" onClick={emailCompletion}/> */}
       <br /><br />
       <div id="contact_links"><img alt="LinkedIn_Image" src={require("../../assets/img/icon-linkedin.png").default} />
@@ -89,6 +94,7 @@ function ContactForm() {
         {/* <div onChange={e => setConfirmation("Email Has Been Sent!")}/> */}
       </div>
     </form>
+    </>
   );
 }
 
