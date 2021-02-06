@@ -47,6 +47,12 @@ main img {
     max-width:350px;
 }
 
+#bioImage {
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color:black;
+}
+
 article{
     width:90%;
     padding:1rem;

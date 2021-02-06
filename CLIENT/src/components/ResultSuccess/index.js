@@ -6,7 +6,7 @@ function ResultSuccess(){
     return(
 <>
 <div id="emailSuccess">
-    Your Message Has Been Submitted Successfully!
+    Your Message Has Been Sent!
 </div>
 
 </>
