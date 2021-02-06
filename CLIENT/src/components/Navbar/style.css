@@ -21,7 +21,7 @@ nav{
   z-index:300;
 }
 
-.navbar a {
+ .navbar a {
   border-radius:95%;
   background-color:purple;
   float:right;
@@ -33,7 +33,7 @@ nav{
 }
 .navbar a:hover {
   color:black;
-}
+} 
 #red{
   box-shadow: 0 5px red;
 }
