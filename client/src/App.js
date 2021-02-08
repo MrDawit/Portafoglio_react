@@ -33,7 +33,8 @@ class App extends Component {
     render() {
         return (
             <div className='bod'>
-           
+          
+          
         <Router>
         <Navbar/>
             <ProjectProvider>
@@ -51,8 +52,9 @@ class App extends Component {
             <Redirect to='/404' />
             </Switch> 
             </ProjectProvider>
+            <Footer/>
         </Router>
-        <Footer/>
+      
         </div>
     )}
 }
