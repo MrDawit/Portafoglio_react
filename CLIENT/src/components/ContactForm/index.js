@@ -124,7 +124,7 @@ function ContactForm() {
         {/* <input id="submitBtn" type="submit" value="Submit" onClick={emailCompletion}/> */}
         <br /><br />
         <div id="contact_links">
-          <div id="linksDirection">Click Links Below:</div>
+          {/* <div id="linksDirection">Click Links Below:</div> */}
           <a href="https://www.linkedin.com/in/shalom-dawit-a0a5a4126"
             target="_blank" rel="noreferrer">
             <img alt="LinkedIn_Image" src={require("../../assets/img/icon-linkedin.png").default} />
