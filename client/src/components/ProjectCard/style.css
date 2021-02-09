@@ -3,20 +3,30 @@
 border:solid;
 text-align: center;
 background-color:grey;
+/* float: center; */
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
 }
 
 .card-content{
 /* border:solid; */
 text-decoration: underline;
+display: block;
+margin-left: auto;
+margin-right: auto;
 }
 
 .card-link{
 border:solid;
+
 }
 
-/* .tito { 
+.tito { 
+    height:350px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;;
-} */
+    width: 100%;
+}

@@ -39,8 +39,8 @@ class App extends Component {
         <Navbar/>
             <ProjectProvider>
             <Switch>
-            {/* <Route exact path="/" component={ProjectList}></Route>
-            <Route exact path="/react-portfolio" component={ProjectList}></Route> */}
+            {/* <Route exact path="/" component={ProjectList}></Route> */}
+            {/* <Route exact path="/react-portfolio" component={ProjectList}></Route> */}
 
             <Route exact path="/" component={MainPage}/>
             <Route exact path='/main' component={MainPage} />

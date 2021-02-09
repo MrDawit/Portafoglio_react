@@ -1,18 +1,17 @@
 import React from "react";
-import ProjectLink from "../Project-Links";
 import "./style.css"
-// import {Link} from "react-router-dom";
 
-const ProjectCard = ({id,name,description_short,GitHubRepo,imageURL,deployURL }) =>{
+
+const ProjectCard = ({name,description_short,imageURL,deployURL }) =>{
 
     return(
       <>
     <div className="card z-depth-3">
-
+    <a target="_blank" rel="noreferrer" href={deployURL}>
       <div className="card-image">
         <img className="tito" alt="holding pattern" src={imageURL}></img>
-        
       </div>
+      </a>
       <span className="card-title">{name}</span>
 
       <div className="card-content">
@@ -20,7 +19,7 @@ const ProjectCard = ({id,name,description_short,GitHubRepo,imageURL,deployURL })
       </div>
 
       <div className="card-action">
-        <ProjectLink className="card-link" deployURL={deployURL} GitHubRepo={GitHubRepo}/>
+        
   
       </div>
 
