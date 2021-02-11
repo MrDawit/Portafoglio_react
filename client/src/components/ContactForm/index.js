@@ -127,12 +127,12 @@ function ContactForm() {
           {/* <div id="linksDirection">Click Links Below:</div> */}
           <a href="https://www.linkedin.com/in/shalom-dawit-a0a5a4126"
             target="_blank" rel="noreferrer">
-            <img alt="LinkedIn_Image" src={require("../../assets/img/icon-linkedin.png").default} />
+            <img className="icon-image" alt="LinkedIn_Image" src={require("../../assets/img/icon-linkedin.png").default} />
         </a>
           <br />
          
           <a href={"https://github.com/MrDawit"} target="_blank" rel="noreferrer">
-          <img alt="Github_Image" src={require("../../assets/img/github-logo.png").default} />
+          <img className="icon-image" alt="Github_Image" src={require("../../assets/img/github-logo.png").default} />
           </a>
         </div>
       </form>
