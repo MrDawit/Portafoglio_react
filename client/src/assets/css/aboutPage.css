@@ -1,4 +1,8 @@
-
+.bod{
+    background-image: url("../img/bgimage.jpg");
+    /*  background-color:blueviolet; */
+      background-image:repeat;
+}
 #purple{
     border: 3px solid indigo;
     box-shadow: 0 5px grey;
