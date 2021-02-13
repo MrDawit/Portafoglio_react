@@ -33,8 +33,8 @@ function ContactForm() {
     //meaning it denotes only the status of communication between browser and server(not of email being sent)
     // const reportTo = await response.status;
     const report = await response.json();
-      console.log(report.status);
-      // console.log(reportTo);
+    console.log(report.status);
+    // console.log(reportTo);
     if (await report.status === 'SENT') {
       //changing state
       setConfirmationSuccess(true);
@@ -46,7 +46,7 @@ function ContactForm() {
       setMessage('');
 
 
-    }else{
+    } else {
       //changing state
       setConfirmationOther(true);
       setConfirmationSuccess(false);
@@ -55,38 +55,14 @@ function ContactForm() {
       setContactWay('');
       setSubject('');
       setMessage('');
-      
+
 
     };
-  
-    // .then(response => {
-    //   // const[success,setSuccess]=useState(response.status);
-    //   // const[emailState,setEmailState]=useState(false);
-    //   console.log(response.status);
-
-    // })
-    // .then(response => {
-    //   console.log(response.json())
-    // })
-    // .then(function (data) {
-    //   console.log(data);
-    // })
-
-
   };
-
-  // function refreshPage() {
-  //   window.location.reload(false);
-  // }
-  // function emailCompletion(){
-
-  //  console.log(confirmation);
-
-  // }
 
   return (
     <>
-    {/* change response components to bootstrap arrangement to the right side of ContactForm */}
+      {/* change response components to bootstrap arrangement to the right side of ContactForm */}
       { confirmationSuccess && <ResultSuccess />}
       {confirmationOther && <ResultOther />}
       <form id="contactForm" onSubmit={submitRequest}>
@@ -116,23 +92,17 @@ function ContactForm() {
           required
         />
         <br />
-        {/* Deprecated Page Refresh */}
-        {/* <input id="submitBtn" type="submit" value="Submit" onClick={refreshPage}/> */}
-        {/* Results component gets rendered on click */}
-        {/* <input id="submitBtn" type="submit" value="Submit" onClick={() => setConfirmation(true)}/> */}
         <input id="submitBtn" type="submit" value="Submit" />
-        {/* <input id="submitBtn" type="submit" value="Submit" onClick={emailCompletion}/> */}
         <br /><br />
         <div id="contact_links">
-          {/* <div id="linksDirection">Click Links Below:</div> */}
           <a href="https://www.linkedin.com/in/shalom-dawit-a0a5a4126"
             target="_blank" rel="noreferrer">
-            <img alt="LinkedIn_Image" src={require("../../assets/img/icon-linkedin.png").default} />
-        </a>
+            <img className="contact_icon" alt="LinkedIn_Image" src={require("../../assets/img/icon-linkedin.png").default} />
+          </a>
           <br />
-         
+
           <a href={"https://github.com/MrDawit"} target="_blank" rel="noreferrer">
-          <img alt="Github_Image" src={require("../../assets/img/github-logo.png").default} />
+            <img className="contact_icon" alt="Github_Image" src={require("../../assets/img/github-logo.png").default} />
           </a>
         </div>
       </form>
