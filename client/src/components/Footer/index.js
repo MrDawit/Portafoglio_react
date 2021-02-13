@@ -1,27 +1,24 @@
 import React from "react";
-import "./style.css";
+import {Container, Row, Col} from "react-bootstrap";
+ import "./style.css";
+
 
 function Footer() {
   return (
-
-    <>
-      <footer id="outer_footer">
-        <div className="container">
-          <div className="row no-gutters">
-            <div className="col-lg-9 col-md-8 col-sm-4">
-
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-8" id="inner_footer">
-              <div id="texting">Created By NEW DIGITAL WORLD</div>
+<>
+    <Container  id="outer_footer">
+          <Row >
+            {/* <Col  lg={0} md={8} sm={4} className=""/> */}
+            <Col lg={12} md={4} sm={8} className="" id="inner_footer">
+              <div id="texting"><span>Created By </span>NEW DIGITAL WORLD</div>
               <div id="image">
                 <img src={require("../../assets/img/favicon.ico").default} alt={"juju"} /> 
-                12/20
+                <span id="date">12/20</span>
               </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </>
+            </Col>
+          </Row>
+        </Container>
+      </>
   );
 }
 

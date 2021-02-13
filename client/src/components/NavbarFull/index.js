@@ -1,10 +1,11 @@
 import React from "react";
-import "./style.css";
+
 import { Link } from 'react-router-dom';
 import ScrollToTop from "../ScrollToTop/index.js";
-
+// import {Nav, NavItem, Navbar, NavDropdown, MenuItem, Glyphicon} from 'react-bootstrap';
+import "./style.css";
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
-function Navbar() {
+function NavbarFull() {
   return (
     <nav className="navbar">
                 <h2>Shalom Dawit</h2>
@@ -18,4 +19,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavbarFull;

@@ -18,7 +18,7 @@ import ContactPage from './pages/contactPage';
 import PortfolioPage from './pages/portfolioPage';
 
 //Components
-import Navbar from './components/Navbar';
+import NavbarFull from './components/NavbarFull';
 import Footer from './components/Footer';
 // import ProjectList from './components/Project-List';
 //was working pre-nodemailer form issue
@@ -36,7 +36,7 @@ class App extends Component {
           
           
         <Router>
-        <Navbar/>
+        <NavbarFull/>
             <ProjectProvider>
             <Switch>
             {/* <Route exact path="/" component={ProjectList}></Route> */}

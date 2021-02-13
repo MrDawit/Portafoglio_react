@@ -41,6 +41,7 @@
   background-image: url("./assets/img/bgimage.jpg");
   /*  background-color:blueviolet; */
     background-image:repeat;
+    width:100%;
 }
 
 h1{

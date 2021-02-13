@@ -39,18 +39,21 @@ nav{
 }
 #red:hover{
   background-color:red;
+  text-decoration: none;
 }
 #green{
   box-shadow: 0 5px green;
 }
 #green:hover{
   background-color:green;
+  text-decoration: none;
 }
 #blue{
   box-shadow: 0 5px blue;
 }
 #blue:hover{
   background-color:blue;
+  text-decoration:none;
 }
 
 
