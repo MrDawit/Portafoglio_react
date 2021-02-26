@@ -18,25 +18,57 @@ import ContactPage from './pages/contactPage';
 import PortfolioPage from './pages/portfolioPage';
 
 //Components
-import Navbar from './components/Navbar';
+ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 // import ProjectList from './components/Project-List';
 //was working pre-nodemailer form issue
 import {ProjectProvider} from "./utils/ProjectContext";
 
-
+import Toolbar from './components/Toolbar/Toolbar';
+import SideDrawer from './components/SideDrawer';
+import Backdrop from './components/Backdrop';
 
 
 
 class App extends Component {
+// drawer
+
+    state = {
+        sideDrawerOpen: false,
+      }
+    
+      drawerToggleClickHandler = () => {
+        this.setState(prevState => {
+          return { sideDrawerOpen: !prevState.sideDrawerOpen }
+        })
+      }
+    
+      backdropClickHandler = () => {
+        this.setState({ sideDrawerOpen: false })
+      }
+  
 
     render() {
+//drawer
+let backdrop;
+    let sideDrawer;
+
+    if (this.state.sideDrawerOpen) {
+      backdrop = <Backdrop click={this.backdropClickHandler} />
+      sideDrawer = <SideDrawer />
+    }
+
         return (
+          <>
+          <Router>
             <div className='bod'>
-          
-          
-        <Router>
-        <Navbar/>
+          <div style={{ height: '100%' }}>
+        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
+        {sideDrawer}
+        {backdrop}
+        <main style={{ marginTop: '0px' }}>
+        {/* <Router>
+        <Navbar/> */}
             <ProjectProvider>
             <Switch>
             {/* <Route exact path="/" component={ProjectList}></Route> */}
@@ -53,9 +85,12 @@ class App extends Component {
             </Switch> 
             </ProjectProvider>
             <Footer/>
-        </Router>
-      
+        {/* </Router> */}
+        </main>
+      </div>
         </div>
+        </Router>
+        </>
     )}
 }
 
