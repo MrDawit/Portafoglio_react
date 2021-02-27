@@ -3,8 +3,12 @@ import { Link } from 'react-router-dom';
 import './style.css'
 
 const sideDrawer = props => {
+  let drawerClasses = "side-drawer";
+  if (props.show) {
+    drawerClasses = "side-drawer open";
+  }
   return (
-    <nav className="side-drawer">
+    <nav className={drawerClasses}>
      <ul>
                     <li>
                     <Link id="red" to="/main">ABOUT</Link>   

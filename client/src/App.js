@@ -51,24 +51,27 @@ class App extends Component {
     render() {
 //drawer
 let backdrop;
-    let sideDrawer;
+   // let sideDrawer;
 
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop click={this.backdropClickHandler} />
-      sideDrawer = <SideDrawer />
+      // sideDrawer = <SideDrawer />
     }
 
         return (
           <>
           <Router>
             <div className='bod'>
-          <div style={{ height: '100%' }}>
+              <div>
+    
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-        {sideDrawer}
+        {/* {sideDrawer} */}
+        <SideDrawer show={this.state.sideDrawerOpen}/>
         {backdrop}
-        <main style={{ marginTop: '0px' }}>
+        <main>
         {/* <Router>
         <Navbar/> */}
+       
             <ProjectProvider>
             <Switch>
             {/* <Route exact path="/" component={ProjectList}></Route> */}

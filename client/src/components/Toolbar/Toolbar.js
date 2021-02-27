@@ -5,8 +5,8 @@ import './style.css'
 
 const toolbar = props => (
     <header className="toolbar">
-        <nav className="toolbar__navigation">
-            <div className="toolbar__toggle-button">
+        <nav className="toolbar_navigation">
+            <div className="toolbar_toggle-button">
                 <DrawerToggleButton click={props.drawerClickHandler} />
             </div>
             <div className="toolbar__logo">
@@ -15,6 +15,7 @@ const toolbar = props => (
             </div>
             <div className="spacer" />
             <div className="toolbar_navigation-items">
+                <form>
                 <ul>
                     <li>
                     <Link id="red" to="/main">ABOUT</Link>   
@@ -26,6 +27,7 @@ const toolbar = props => (
                     <Link id="blue" to="/contact">CONTACT</Link>
                     </li>
                 </ul>
+                </form>
             </div>
         </nav>
     </header>
