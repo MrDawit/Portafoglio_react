@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './style.css'
 
 const toolbar = props => (
+    
      <nav className="toolbar navbar">
          {/* <nav className="toolbar_navigation"> */}
             <div className="toolbar_toggle-button">
@@ -17,7 +18,7 @@ const toolbar = props => (
             
                <form id="navForm">
             
-                    <Link id="red" to="/main">ABOUT</Link>   
+                    <Link id="red" to="/main" >ABOUT</Link>   
                  
                     <Link id="green" to="/portfolio">PORTFOLIO</Link>
                    
@@ -29,4 +30,4 @@ const toolbar = props => (
   
 )
 
-export default toolbar
+export default toolbar;

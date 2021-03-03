@@ -4,8 +4,8 @@ import './App.css';
 
 
 import { 
-    HashRouter as Router, 
-    // BrowserRouter as Router,
+   // HashRouter as Router, 
+     BrowserRouter as Router,
       Route, 
       Switch, 
       Redirect 
@@ -31,10 +31,24 @@ import Backdrop from './components/Backdrop';
 
 
 class App extends Component {
-// drawer
+//   constructor(props){
+//     super(props);
+//     this.state = {
+//         sideDrawerOpen: false
+//     }
+// }
+
+// handleCallback = (childData) =>{
+//     this.setState({sideDrawerOpen: childData})
+// }
+
+  // drawer
 
     state = {
         sideDrawerOpen: false,
+        // sideDrawerClose: false,
+       // open: false
+        // sideDrawerClose: true,
       }
     
       drawerToggleClickHandler = () => {
@@ -46,27 +60,63 @@ class App extends Component {
       backdropClickHandler = () => {
         this.setState({ sideDrawerOpen: false })
       }
-  
+
+      // if (this.state.sideDrawerOpen && handleToolbarClick) {
+      //   this.drawerToggleClickHandler
+      // }
+      // drawerCloseToggleClickHandler = () => {
+      //   this.setState(prevState => {
+      //     return { sideDrawerClose: !prevState.sideDrawerClose }
+      //   })
+      // }
+
+      // toolbarClickHandler = () => {
+      //   this.setState({ sideDrawerClose: true })
+      // }
+// childCloseDrawer = (linkClick) => {
+//   console.log(`linkClink is:${linkClick}`);
+//       if (linkClick){
+//         this.setState({sideDrawerOpen: false})
+//       }
+//     }
+
+// componentDidUpdate(prevProps) {
+//   const { location } = this.props;
+//   if (location !== prevProps.location && this.state.sideDrawerOpen) {
+//     this.setState({ sideDrawerOpen: false });
+//   }
+// }
+
 
     render() {
 //drawer
 let backdrop;
- 
+// let sideDrawer;
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop click={this.backdropClickHandler} />
+    //  sideDrawer = <SideDrawer click={this.toolbarClickHandler}/>
     }
+    // if (this.state.sideDrawerOpen) {
+    //   sidedrawer = <Toolbar click={this.toolbarClickHandler} />
+  // let open;   
+    // }
 
+    
+  
         return (
           <>
            <div className='bod'>
           <Router>
-        
+          <Toolbar  drawerClickHandler={this.drawerToggleClickHandler} 
+          // sideDrawerWhileOpen={handleToolbarClick}
+          />
     
-        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-       
-        <SideDrawer show={this.state.sideDrawerOpen}/>
+        {/* <Toolbar ronald={this.linkClick} drawerClickHandler={this.drawerToggleClickHandler} /> 
+         {sideDrawer} */}
+
+        <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler}/>
         {backdrop}
-     
+    
      
        
             <ProjectProvider>
