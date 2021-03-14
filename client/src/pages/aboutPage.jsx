@@ -2,7 +2,7 @@ import React from 'react';
 import Spacer from '../components/Spacer';
 import "../assets/css/aboutPage.css";
 
-import resume from '../assets/files/Shalom_Dawit_Resume.docx';
+import resume from '../assets/files/SHALOM DAWIT Resume.pdf';
 
 const AboutPage = () => {
   
@@ -21,7 +21,7 @@ const AboutPage = () => {
                            <span>Greetings into the window of my life! </span> My name is Shalom Dawit and I am a full-stack developer with big dreams. My heritage is from Eritrea/Ethiopia, but my heart is from California. I grew up in Southern Connecticut and went to school at Uconn School of Engineering. I am currently also a long-term substitute teacher (Algebra) and, before the pandemic, taught Jujutsu at Uconn. I try to be a people-person when working with clients and groups by solving problems without disrupting the nature of the subject. Hopefully that translates into my work previously, currently and in to the future. Thank you for taking the time to look at my skills!
                     </article>
                         {/* <a id="purple" href={"../assets/img/pic0.jpg"} target="_blank" rel="noreferrer">RESUME</a> */}
-                    <a id="purple" href={resume} download="Shalom_Dawit_Resume.docx"> Resume </a>
+                    <a id="purple" href={resume} download="SHALOM DAWIT Resume.pdf"> Resume </a>
                     </div>
 
                 </main>
