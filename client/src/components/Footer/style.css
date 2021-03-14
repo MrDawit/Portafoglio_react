@@ -12,9 +12,24 @@ color:black;
 /* added opacity to background-color style */
 background-color:rgb(62, 66, 145, 0.4);
 
+
 }
 
-
-#texting{
-  background-color:rgb(62, 66, 145, 0.99);
+.footerRow {
+  margin-right:0px;
 }
+
+#texting, #image{
+
+  /*text-align:center; */
+  background-color:rgb(130, 132, 175);
+  background: linear-gradient(45deg,black,indigo, #002bff, #7a00ff, #ff00c8);
+  background-clip:border-box;
+}
+
+/* #image {
+
+  background-color:rgb(130, 132, 175),red;
+  background-blend-mode: lighten;
+  background-clip:border-box;
+} */

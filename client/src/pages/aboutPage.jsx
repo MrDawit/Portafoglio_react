@@ -7,7 +7,7 @@ import resume from '../assets/files/SHALOM DAWIT Resume.pdf';
 const AboutPage = () => {
   
     return (
-        <>
+    
             <div className="bod">
                 {/* <Navbar /> */}
                 <main className="col-xs-12 col-lg-10">
@@ -29,7 +29,7 @@ const AboutPage = () => {
 
               {/*  <Footer /> */}
             </div>
-        </>
+        
     );
 };
 

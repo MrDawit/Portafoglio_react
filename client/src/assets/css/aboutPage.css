@@ -1,7 +1,7 @@
 .bod{
-    background-image: url("../img/bgimage.jpg");
-    /*  background-color:blueviolet; */
-      background-image:repeat;
+    /* background-image: url("../img/bgimage.jpg");
+    
+      background-image:repeat; */
       padding-top: 50px;
 }
 #purple{
