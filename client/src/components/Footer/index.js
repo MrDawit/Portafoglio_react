@@ -10,7 +10,7 @@ function Footer() {
   <div className="row footerRow">
     
       <div className="col-lg-9  col-md-6 col-sm-6"/>
-    <div id="texting" className="col-lg-3"> Created By NEW DIGITAL WORLD</div>
+    <div id="texting" className="col-lg-3 col-md-6 col-sm-6"> Created By NEW DIGITAL WORLD</div>
     </div>
     <div className="row footerRow">
     <div className="col-10"/>

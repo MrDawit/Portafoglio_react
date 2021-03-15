@@ -20,16 +20,11 @@ background-color:rgb(62, 66, 145, 0.4);
 }
 
 #texting, #image{
-
+color:black;
   /*text-align:center; */
-  background-color:rgb(130, 132, 175);
-  background: linear-gradient(45deg,black,indigo, #002bff, #7a00ff, #ff00c8);
+  /* background-color:rgb(130, 132, 175);
+  background: linear-gradient(45deg,black,indigo, #053ea8, #7a00ff); */
+  background: linear-gradient(90deg,rgb(62, 66, 145, 0.4),rgb(130, 132, 175),rgb(130, 132, 175));
   background-clip:border-box;
 }
 
-/* #image {
-
-  background-color:rgb(130, 132, 175),red;
-  background-blend-mode: lighten;
-  background-clip:border-box;
-} */
