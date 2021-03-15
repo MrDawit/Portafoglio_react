@@ -1,6 +1,7 @@
 import React from 'react';
 import DrawerToggleButton from '../DrawerToggleButton';
 import { Link } from 'react-router-dom';
+import ScrollToTop from "../ScrollToTop/index.js";
 import './style.css'
 
 const toolbar = props => (
@@ -17,7 +18,7 @@ const toolbar = props => (
             {/* <div className="spacer" /> */}
             
                <form id="navForm">
-            
+            <ScrollToTop />
                     <Link id="red" to="/main" >ABOUT</Link>   
                  
                     <Link id="green" to="/portfolio">PORTFOLIO</Link>

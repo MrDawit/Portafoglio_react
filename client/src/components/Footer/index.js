@@ -9,12 +9,12 @@ function Footer() {
  
   <div className="row footerRow">
     
-      <div className="col-lg-9  col-md-6 col-sm-6"/>
-    <div id="texting" className="col-lg-3 col-md-6 col-sm-6"> Created By NEW DIGITAL WORLD</div>
+      <div className="col-lg-9  col-md-6 col-sm-11 col-xs-11"/>
+    <div id="texting" className="col-lg-3 col-md-6 col-sm-1 col-xs-1"> Created By NEW DIGITAL WORLD</div>
     </div>
     <div className="row footerRow">
-    <div className="col-10"/>
-    <div id="image" className="col-2">
+    <div className="col-lg-10 col-md-10 col-sm-10"/>
+    <div id="image" className="col-lg-2 col-md-2 col-sm-2">
        <img  src={require("../../assets/img/favicon.ico").default} alt={"juju"}/> 12/20
     </div>
     </div>
