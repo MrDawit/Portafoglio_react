@@ -38,9 +38,11 @@
 }
 
 .bod{
-  background-image: url("./assets/img/bgimage.jpg");
+  /* background-image: url("./assets/img/bgimage.jpg"); */
+  background-image: url("./assets/img/modern4.jpg");
 
-    background-image:repeat;
+    /* background-image:repeat; */
+    background-image: no-repeat;
 }
 
 h1{
