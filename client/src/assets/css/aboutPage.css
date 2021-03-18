@@ -25,6 +25,8 @@
 
  
 main {
+    background-image: url("../img/modern4.jpg");
+    color:white;
     margin:60px auto;
     border-style: inset;
     border-color: indigo;
