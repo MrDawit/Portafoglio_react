@@ -2,7 +2,8 @@
 .side-drawer{
     height: 100%;
     /* background: white; */
-    background-image: url("../../assets/img/bgimage.jpg");
+    /* background-image: url("../../assets/img/bgimage.jpg"); */
+    background-image: url("../../assets/img/modern6.jpg");
     box-shadow: 1px 0px 7px rgba(0,0,0,0.5);
     position: fixed;
     top: 0;
@@ -28,38 +29,50 @@
   /*only work if .navbar button has a .hover*/
   transform: translateY(4px);
 }
+/* .drawer_links:hover{
+    color:black;
+    background-color:red;
+} */
 
 .drawer_item {
   padding:25px;
 }
+/* .drawer_item:hover {
+  color:black;
+  background-color:red;
+} */
 
 #drawer_ul {
   list-style-type:none;
 }
+/* #drawer_ul:hover{
+  color:black;
+  background-color:red;
+} */
 
-#red{
+#red_sideDrawer{
     box-shadow: 0 5px red;
   }
-  #red:hover {
+#red_sideDrawer:hover {
     background-color:red;
-    color:black;
-    text-decoration: none;
+    /* color:black;
+    text-decoration: none; */
   }
-  #green{
+#green_sideDrawer{
     box-shadow: 0 5px green;
   }
-  #green:hover {
+#green_sideDrawer:hover {
     background-color:green;
-    color:black;
-    text-decoration: none;
+    /* color:black;
+    text-decoration: none; */
   }
-  #blue{
+#blue_sideDrawer{
     box-shadow: 0 5px blue;
   }
-  #blue:hover {
+#blue_sideDrawer:hover {
     background-color:blue;
-    color:black;
-    text-decoration: none;
+    /* color:black;
+    text-decoration: none; */
   }
 
 @media (min-width:769px){
