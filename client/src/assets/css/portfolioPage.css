@@ -41,6 +41,7 @@
 
   @media screen and (max-width:768px) {
     main{padding-top:5rem!important;
+      
         }
     h1{
     font-size: 10vw;
