@@ -94,6 +94,7 @@ function ContactForm() {
         <br />
         <input id="submitBtn" type="submit" value="Submit" />
         <br /><br />
+        <div><span>Email: </span>Shalom.Dawit@Gmail.com</div>
         <div id="contact_links">
           <a href="https://www.linkedin.com/in/shalom-dawit-a0a5a4126"
             target="_blank" rel="noreferrer">
