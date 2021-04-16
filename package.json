@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/MrDawit/Portafoglio_react/issues"
   },
-  "homepage": "https://mrdawit.github.io/Portafoglio_react/",
+  "homepage": "",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
