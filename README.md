@@ -20,7 +20,7 @@ Deployed Portfolio(without backend server functionality): https://mrdawit.github
 My portfolio created using React
    
 
-<img src="./cient/src/assets/img/Shalom Dawit_Portfolio.gif" />
+<img src="./cient/src/assets/img/Shalom_Dawit_Portfolio.gif" />
 
 
 <img src="./client/src/assets/img/Portafoglio_react.png" width="600" height="296" />
