@@ -20,7 +20,7 @@ Deployed BACKUP Portfolio(without backend server functionality): https://mrdawit
 My portfolio created using React
    
 
-<img src="./cient/src/assets/img/Shalom_Dawit_Portfolio.gif" />
+<img src="./client/src/assets/img/Shalom_Dawit_Portfolio.gif" />
 
 
 <img src="./client/src/assets/img/Portafoglio_react.png" width="600" height="296" />
