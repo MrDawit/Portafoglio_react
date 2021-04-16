@@ -19,7 +19,7 @@ Deployed Portfolio(without backend server functionality): https://mrdawit.github
 ## Description 
 My portfolio created using React
    
-
+"older images"
 <img src="./cient/src/assets/img/Shalom_Dawit_Portfolio.gif" />
 
 
