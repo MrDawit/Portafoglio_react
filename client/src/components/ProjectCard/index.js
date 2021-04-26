@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css"
 
 
-const ProjectCard = ({ name, description_short, imageURL, deployURL, GitHubRepo }) => {
+const ProjectCard = ({ name, description_short, imageURL, deployURL, GitHubRepo, loginInfo }) => {
 
   return (
     <>
@@ -26,6 +26,7 @@ const ProjectCard = ({ name, description_short, imageURL, deployURL, GitHubRepo 
 
         <div className="card-info">
           <p>{description_short}</p>
+          <p>{loginInfo}</p>
         </div>
 
         <div className="card-action">
