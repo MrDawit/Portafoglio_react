@@ -107,11 +107,17 @@ border:solid;
     font-size: xx-large;
     text-decoration: underline;
   }
-  #loginInfoTitle{
+  /* #loginInfoTitle{
     text-decoration: underline;
     color: red;
   }
   #loginInfoLabel{
     text-decoration: none !important;
+color: green;
+  } */
+
+  #login_info{
+    border-top:2px;
+    border-bottom:2px;
 color: green;
   }
