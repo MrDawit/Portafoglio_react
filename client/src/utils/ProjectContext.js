@@ -12,7 +12,7 @@ export const ProjectProvider = props => {
             name: "The ToolShed",
             description_short: "A REACT app to help users not lose their tools!",
             imageURL: require("../assets/img/toolshed.png").default,
-            GitHubRepo:"https://github.com/Elli360/Project3",
+            GitHubRepo:"https://github.com/MrDawit/ToolShed",
             deployURL:"https://toolshed-app-team8.herokuapp.com/",
             id: 1
         },
