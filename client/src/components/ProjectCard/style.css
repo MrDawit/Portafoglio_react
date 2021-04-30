@@ -1,3 +1,11 @@
+
+.card {
+  /*change FOOTER linear-gradient if deciding to use top option 
+   background: linear-gradient(90deg,rgb(62, 66, 145, 1),rgb(130, 132, 175),rgb(130, 132, 175)); */
+   background: linear-gradient(180deg,rgb(63, 64, 85),rgb(121, 122, 141),rgb(200, 201, 221));
+   /* background: linear-gradient(180deg,rgb(49, 50, 68),rgb(121, 122, 141),rgb(200, 201, 221)); */
+}
+
 .card-title{
     max-width:350px;
 border:solid;
@@ -126,3 +134,5 @@ font-weight: 900;
   #projDescr{
     text-align: center;
   }
+
+ 
