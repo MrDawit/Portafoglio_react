@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css"
 
 
-const ProjectCard = ({ name, description_short, imageURL, deployURL, GitHubRepo, loginInfo }) => {
+const ProjectCard = ({ name, descriptionShort, imageURL, deployURL, gitHubRepo, loginInfo, skills }) => {
 
   return (
     <>
@@ -19,13 +19,14 @@ const ProjectCard = ({ name, description_short, imageURL, deployURL, GitHubRepo,
           </div>
         {/* </a> */}
         {/* <div className="overlay"><div className="text">{name}</div></div> */}
-        <a target="_blank" rel="noreferrer" href={GitHubRepo}>
+        <a target="_blank" rel="noreferrer" href={gitHubRepo}>
           {/* <span className="gitHub">GitHub Repo:</span> */}
           <span className="card-title">GitHub Repo: {name}</span>
           </a>
 
         <div className="card-info">
-          <p id="projDescr">{description_short}</p>
+          <p id="projDescr">{descriptionShort}</p>
+          <p id="skills">{skills}</p>
           <p id="login_info">{loginInfo}</p>
         </div>
 

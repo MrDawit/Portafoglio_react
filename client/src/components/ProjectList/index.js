@@ -10,7 +10,7 @@ const ProjectList = () => {
                 {projects.map(project => (
                    
                      <div className="col-sm-12 col-md-6 " key={project.id}>
-                        <ProjectCard name={project.name} imageURL={project.imageURL} description_short={project.description_short} GitHubRepo={project.GitHubRepo} deployURL={project.deployURL} loginInfo ={project.loginInfo}/>
+                        <ProjectCard name={project.name} imageURL={project.imageURL} descriptionShort={project.descriptionShort} gitHubRepo={project.gitHubRepo} deployURL={project.deployURL} loginInfo ={project.loginInfo} skills ={project.skills}/>
                     </div>
 
                 ))}
