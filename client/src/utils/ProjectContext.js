@@ -14,7 +14,7 @@ export const ProjectProvider = props => {
             imageURL: require("../assets/img/toolshed.png").default,
             gitHubRepo:"https://github.com/MrDawit/ToolShed",
             deployURL:"https://toolshed-app-team8.herokuapp.com/",
-            skills: "React, CSS, REST API, BLK systems framework, Bootstrap",
+            skills: "React, REST API, BLK systems framework, Bootstrap, MySQL, NodeJS, Javascript, HTML, CSS",
             id: 1
         },
         {
@@ -24,7 +24,7 @@ export const ProjectProvider = props => {
             imageURL: require("../assets/img/covid19_info.png").default,
             gitHubRepo:"https://github.com/troylochner/covid19-info",
             deployURL:"https://troylochner.github.io/covid19-info/",
-            skills: "React, CSS, REST API, BLK systems framework, Bootstrap",
+            skills: "Web API, Materialize framework, Javascript, JQuery, HTML, CSS",
             id: 2
         }, 
         {
@@ -35,7 +35,7 @@ export const ProjectProvider = props => {
             gitHubRepo:"https://github.com/lcalderin12/Recipe-Tracker",
             deployURL:"https://recipes-tracker-hanzee.herokuapp.com/",
             loginInfo:"* (For Login) EMAIL: Shalom.Dawit@gmail.com PASSWORD: food",
-            skills: "React, CSS, REST API, BLK systems framework, Bootstrap",
+            skills: "JavaScript, HTML, CSS3, REST API, NodeMailer, NodeJS, Express Handlebars, JQuery, AJAX, Passport, Sequelize, Bootstrap ",
             id: 3
         }, 
         {
@@ -45,7 +45,7 @@ export const ProjectProvider = props => {
             imageURL: require("../assets/img/AllUCanBurger.png").default,
             gitHubRepo:"https://github.com/MrDawit/All-U-Can-Burger",
             deployURL:"https://all-u-can-burger.herokuapp.com/",
-            skills: "React, CSS, REST API, BLK systems framework, Bootstrap",
+            skills: "JavaScript, HTML5, CSS3, REST API, NodeJS, Express Handlebars, JQuery, AJAX, MySQL, Sequelize, Bootstrap, MVC design pattern ",
             id: 4
         },
         {
@@ -55,7 +55,7 @@ export const ProjectProvider = props => {
             imageURL: require("../assets/img/WeatherApp.png").default,
             gitHubRepo:"https://github.com/MrDawit/WeatherApp",
             deployURL:"https://MrDawit.github.io/WeatherApp",
-            skills: "React, CSS, REST API, BLK systems framework, Bootstrap",
+            skills: "HTML, CSS, Web API, Javascript, Localstorage API, Bootstrap, DOM, Moment library",
             id: 5
         },
         {
@@ -65,7 +65,7 @@ export const ProjectProvider = props => {
             imageURL: require("../assets/img/Scheduler.png").default,
             gitHubRepo:"https://github.com/MrDawit/Scheduler",
             deployURL:"https://MrDawit.github.io/Scheduler",
-            skills: "React, CSS, REST API, BLK systems framework, Bootstrap",
+            skills: "HTML, CSS, JQuery, Javascript, Localstorage API, Bootstrap, DOM, Moment library",
             id: 6
         },
         {
@@ -75,7 +75,7 @@ export const ProjectProvider = props => {
             imageURL: require("../assets/img/google_books.png").default,
             gitHubRepo:"https://github.com/MrDawit/Google-Books",
             deployURL:"https://google-books-hmwk.herokuapp.com/",
-            skills: "React, CSS, REST API, BLK systems framework, Bootstrap",
+            skills: "React, CSS, REST API, MERN-stack, MongoDB, Mongoose, Node, Axios, Bootstrap",
             id: 7
         },
         {
@@ -85,7 +85,7 @@ export const ProjectProvider = props => {
             imageURL: require("../assets/img/Code_Quiz.png").default,
             gitHubRepo:"https://github.com/MrDawit/Code-Quiz",
             deployURL:"https://mrdawit.github.io/Code-Quiz/index.html",
-            skills: "React, CSS, REST API, BLK systems framework, Bootstrap",
+            skills: "HTML, CSS, JQuery, Javascript, Localstorage API, Bootstrap, DOM, Moment library",
             id: 8
         }
        

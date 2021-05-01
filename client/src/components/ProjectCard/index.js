@@ -25,8 +25,8 @@ const ProjectCard = ({ name, descriptionShort, imageURL, deployURL, gitHubRepo, 
           </a>
 
         <div className="card-info">
-          <p id="projDescr">{descriptionShort}</p>
-          <p id="skills">{skills}</p>
+          <p id="projDescr">({descriptionShort})</p>
+          <span>Tools Used: </span><p id="skills">{skills}</p>
           <p id="login_info">{loginInfo}</p>
         </div>
 
