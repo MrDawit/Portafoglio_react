@@ -60,6 +60,24 @@ h1 span{
  span{
      font-weight: bold;
  }
+
+ #bio{
+     border:indigo solid;
+ }
+ .skillsIcon {
+     width:50px;
+     height:auto;
+     padding: 2px;
+     border-radius: 45%;
+ }
+
+ h3{
+     text-decoration: double overline;
+ }
+
+ #skillsAbout {
+     
+ }
 /* 
 @media screen and (max-width:768px) {
     main{padding-top:5rem!important;

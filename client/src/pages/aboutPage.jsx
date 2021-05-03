@@ -11,8 +11,20 @@ const AboutPage = () => {
             <div className="bod">
                 {/* <Navbar /> */}
                 <main className="col-xs-12 col-lg-10">
-
-                    <div>
+<div id="skillsAbout"><h3>Skills </h3>
+<img alt={"html5"} src={require("../assets/img/html5.png").default} className="skillsIcon" />
+<img alt={"css3"} src={require("../assets/img/css3.png").default} className="skillsIcon" />
+<img alt={"javascript"} src={require("../assets/img/JS.png").default} className="skillsIcon" />
+<img alt={"jquery"} src={require("../assets/img/jQuery.png").default} className="skillsIcon" />
+<img alt={"mysql"} src={require("../assets/img/MySQL.jpg").default} className="skillsIcon" />
+<img alt={"mongodb"} src={require("../assets/img/mongodb.png").default} className="skillsIcon" />
+<img alt={"react"} src={require("../assets/img/React.png").default} className="skillsIcon" />
+<img alt={"mern"} src={require("../assets/img/mern.jpg").default} className="skillsIcon" />
+<img alt={"nodeJS"} src={require("../assets/img/nodeJS.png").default} className="skillsIcon" />
+<img alt={"npm"} src={require("../assets/img/npm_logo.png").default} className="skillsIcon" />
+<img alt={"express"} src={require("../assets/img/express.png").default} className="skillsIcon" />
+<img alt={"bootsrap"} src={require("../assets/img/bootstrap.png").default} className="skillsIcon" />
+                    <div id="bio">
 
                         <h1>Bio</h1>
                         <img alt={"Shalom Dawit"} src={require("../assets/img/PIC.JPG").default} className="image-wrapper float-left img-responsive pr-2" id="bioImage" />
@@ -23,7 +35,7 @@ const AboutPage = () => {
                         {/* <a id="purple" href={"../assets/img/pic0.jpg"} target="_blank" rel="noreferrer">RESUME</a> */}
                     <a id="purple" href={resume} download="SHALOM DAWIT Resume.pdf"> Resume </a>
                     </div>
-
+</div>
                 </main>
 <Spacer/>
 
