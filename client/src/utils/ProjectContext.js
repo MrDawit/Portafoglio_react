@@ -20,7 +20,7 @@ export const ProjectProvider = props => {
         {
            
             name: "Covid19 Info",
-            descriptionShort: "Covid-19 high level statistics dashboard.",
+            descriptionShort: "Covid-19 high level statistics dashboard",
             imageURL: require("../assets/img/covid19_info.png").default,
             gitHubRepo:"https://github.com/troylochner/covid19-info",
             deployURL:"https://troylochner.github.io/covid19-info/",
@@ -30,7 +30,7 @@ export const ProjectProvider = props => {
         {
            
             name: "Recipe Tracker",
-            descriptionShort: "App to organize your recipes",
+            descriptionShort: "An App to organize your recipes",
             imageURL: require("../assets/img/main.png").default,
             gitHubRepo:"https://github.com/lcalderin12/Recipe-Tracker",
             deployURL:"https://recipes-tracker-hanzee.herokuapp.com/",
@@ -41,7 +41,7 @@ export const ProjectProvider = props => {
         {
            
             name: "All U Can Burger",
-            descriptionShort: "App to organize your burger diet using express handlebars",
+            descriptionShort: "An App to organize your burger diet using express handlebars",
             imageURL: require("../assets/img/AllUCanBurger.png").default,
             gitHubRepo:"https://github.com/MrDawit/All-U-Can-Burger",
             deployURL:"https://all-u-can-burger.herokuapp.com/",
