@@ -1,6 +1,7 @@
 require("dotenv").config();
 const nodemailer = require("nodemailer");
-const { google } = require("googleapis");
+//const { google } = require("googleapis");
+//const Mail = require("nodemailer/lib/mailer");
 module.exports = function (app) {
 
   app.post("/api/contact", function (req, response) {
@@ -13,22 +14,31 @@ module.exports = function (app) {
 
 
     async function main() {
-      let oAuth2Client = new google.auth.OAuth2(process.env.CLIENT_ID, process.env.CLIENT_SECRET, process.env.REDIRECT_URI);
-      oAuth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
+     // let testAccount = await nodemailer.createTestAccount();
+      // let oAuth2Client = new google.auth.OAuth2(process.env.CLIENT_ID, process.env.CLIENT_SECRET, process.env.REDIRECT_URI);
+      // oAuth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
 
-      let accessToken = await oAuth2Client.getAccessToken();
+      // let accessToken = await oAuth2Client.getAccessToken();
 
       // create reusable transporter object using the default SMTP transport
       let transporter = nodemailer.createTransport({
-        host: "smtp.gmail.com",
+        //works with or without name key
+        //name: "www.mail.zoho.com",
+        host: "smtp.zoho.com",
+        port: 465,
+        secure: true, // true for 465, false for other ports
+
         auth: {
-          type: 'OAuth2',
-          user: process.env.MAIL_USER,
-          clientId: process.env.CLIENT_ID,
-          clientSecret: process.env.CLIENT_SECRET,
-          refreshToken: process.env.REFRESH_TOKEN,
-          accessToken: accessToken
+          user: process.env.USER,
+          pass: process.env.THIRD_PARTY_APP_PASS,
+          // type: 'OAuth2',
+          // user: process.env.MAIL_USER,
+          // clientId: process.env.CLIENT_ID,
+          // clientSecret: process.env.CLIENT_SECRET,
+          // refreshToken: process.env.REFRESH_TOKEN,
+          // accessToken: accessToken
         },
+        //works with or without
         tls: {
           // do not fail on invalid certs(false), changed to true for security and still worked
           rejectUnauthorized: true
@@ -36,8 +46,8 @@ module.exports = function (app) {
       });
       // send mail with defined transport object
       let info = await transporter.sendMail({
-        from: `'Portafoglio App' <${req.body.email}>`, // sender address
-        to: `'Contacts' <${process.env.MAIL_USER}>`, // list of receivers,MUST BE VALID email
+        from: `'Portafoglio App' <${process.env.USER}>`, // sender address
+         to: `'Contacts' <${process.env.USER}>`, // list of receivers,MUST BE VALID email
         subject: `${req.body.subject}`, // Subject line
         text: `${req.body.message}`, // plain text body
         // html: "just a test",
