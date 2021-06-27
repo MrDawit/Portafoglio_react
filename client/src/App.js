@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 
@@ -30,119 +31,205 @@ import Backdrop from './components/Backdrop';
 
 
 
-class App extends Component {
-//   constructor(props){
-//     super(props);
-//     this.state = {
-//         sideDrawerOpen: false
-//     }
-// }
+// class App extends Component {
+// //   constructor(props){
+// //     super(props);
+// //     this.state = {
+// //         sideDrawerOpen: false
+// //     }
+// // }
 
-// handleCallback = (childData) =>{
-//     this.setState({sideDrawerOpen: childData})
-// }
+// // handleCallback = (childData) =>{
+// //     this.setState({sideDrawerOpen: childData})
+// // }
 
-  // drawer
+//   // drawer
 
-    state = {
-        sideDrawerOpen: false,
-        // sideDrawerClose: false,
-       // open: false
-        // sideDrawerClose: true,
-      }
-    
-      drawerToggleClickHandler = () => {
-        this.setState(prevState => {
-          return { sideDrawerOpen: !prevState.sideDrawerOpen }
-        })
-      }
-    
-      backdropClickHandler = () => {
-        this.setState({ sideDrawerOpen: false })
-      }
-
-      // if (this.state.sideDrawerOpen && handleToolbarClick) {
-      //   this.drawerToggleClickHandler
-      // }
-      // drawerCloseToggleClickHandler = () => {
-      //   this.setState(prevState => {
-      //     return { sideDrawerClose: !prevState.sideDrawerClose }
-      //   })
-      // }
-
-      // toolbarClickHandler = () => {
-      //   this.setState({ sideDrawerClose: true })
-      // }
-// childCloseDrawer = (linkClick) => {
-//   console.log(`linkClink is:${linkClick}`);
-//       if (linkClick){
-//         this.setState({sideDrawerOpen: false})
+//     state = {
+//         sideDrawerOpen: false,
+//         // sideDrawerClose: false,
+//        // open: false
+//         // sideDrawerClose: true,
 //       }
+    
+//       drawerToggleClickHandler = () => {
+//         this.setState(prevState => {
+//           return { sideDrawerOpen: !prevState.sideDrawerOpen }
+//         })
+//       }
+    
+//       backdropClickHandler = () => {
+//         this.setState({ sideDrawerOpen: false })
+//       }
+
+//       // if (this.state.sideDrawerOpen && handleToolbarClick) {
+//       //   this.drawerToggleClickHandler
+//       // }
+//       // drawerCloseToggleClickHandler = () => {
+//       //   this.setState(prevState => {
+//       //     return { sideDrawerClose: !prevState.sideDrawerClose }
+//       //   })
+//       // }
+
+//       // toolbarClickHandler = () => {
+//       //   this.setState({ sideDrawerClose: true })
+//       // }
+// // childCloseDrawer = (linkClick) => {
+// //   console.log(`linkClink is:${linkClick}`);
+// //       if (linkClick){
+// //         this.setState({sideDrawerOpen: false})
+// //       }
+// //     }
+
+// // componentDidUpdate(prevProps) {
+// //   const { location } = this.props;
+// //   if (location !== prevProps.location && this.state.sideDrawerOpen) {
+// //     this.setState({ sideDrawerOpen: false });
+// //   }
+// // }
+
+
+//     render() {
+// //drawer
+// let backdrop;
+// // let sideDrawer;
+//     if (this.state.sideDrawerOpen) {
+//       backdrop = <Backdrop click={this.backdropClickHandler} />
+//     //  sideDrawer = <SideDrawer click={this.toolbarClickHandler}/>
 //     }
-
-// componentDidUpdate(prevProps) {
-//   const { location } = this.props;
-//   if (location !== prevProps.location && this.state.sideDrawerOpen) {
-//     this.setState({ sideDrawerOpen: false });
-//   }
-// }
-
-
-    render() {
-//drawer
-let backdrop;
-// let sideDrawer;
-    if (this.state.sideDrawerOpen) {
-      backdrop = <Backdrop click={this.backdropClickHandler} />
-    //  sideDrawer = <SideDrawer click={this.toolbarClickHandler}/>
-    }
-    // if (this.state.sideDrawerOpen) {
-    //   sidedrawer = <Toolbar click={this.toolbarClickHandler} />
-  // let open;   
-    // }
+//     // if (this.state.sideDrawerOpen) {
+//     //   sidedrawer = <Toolbar click={this.toolbarClickHandler} />
+//   // let open;   
+//     // }
 
     
   
-        return (
-          <>
-           <div className='bod'>
-          <Router>
-          <Toolbar  drawerClickHandler={this.drawerToggleClickHandler} 
-          // sideDrawerWhileOpen={handleToolbarClick}
-          />
+//         return (
+//           <>
+//            <div className='bod'>
+//           <Router>
+//           <Toolbar  drawerClickHandler={this.drawerToggleClickHandler} 
+//           // sideDrawerWhileOpen={handleToolbarClick}
+//           />
     
-        {/* <Toolbar ronald={this.linkClick} drawerClickHandler={this.drawerToggleClickHandler} /> 
-         {sideDrawer} */}
+//         {/* <Toolbar ronald={this.linkClick} drawerClickHandler={this.drawerToggleClickHandler} /> 
+//          {sideDrawer} */}
 
-        <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler}/>
-        {backdrop}
+//         <SideDrawer show={this.state.sideDrawerOpen} click={this.drawerToggleClickHandler}/>
+//         {backdrop}
     
      
        
-            <ProjectProvider>
-            <Switch>
-            {/* <Route exact path="/" component={ProjectList}></Route> */}
-            {/* <Route exact path="/react-portfolio" component={ProjectList}></Route> */}
-
-            <Route exact path="/" component={MainPage}/>
-            <Route exact path='/main' component={MainPage} />
+//             <ProjectProvider>
             
-            <Route exact path='/contact' component={ContactPage} />
-            <Route exact path='/portfolio' component={PortfolioPage} />
+//             <Switch>
+//             {/* <Route exact path="/" component={ProjectList}></Route> */}
+//             {/* <Route exact path="/react-portfolio" component={ProjectList}></Route> */}
+
+//             <Route exact path="/" component={MainPage}/>
+//             <Route exact path='/main' component={MainPage} />
+            
+//             <Route exact path='/contact' component={ContactPage} />
+//             <Route exact path='/portfolio' component={PortfolioPage} />
            
-            <Route exact path ='/404' component={NotFoundPage} />
-            <Redirect to='/404' />
-            </Switch> 
-            </ProjectProvider>
-            <Footer/>
+//             <Route exact path ='/404' component={NotFoundPage} />
+//             <Redirect to='/404' />
+//             </Switch> 
+
+//             </ProjectProvider>
+//             <Footer/>
        
      
-        </Router>
-        </div>
-        </>
-    )}
-}
+//         </Router>
+//         </div>
+//         </>
+//     )}
+// }
 
+
+
+
+
+
+
+
+
+
+function App() {
+
+  const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
+      // state = {
+      //     sideDrawerOpen: false,
+  
+      //   }
+      
+      //  drawerToggleClickHandler = () => {
+      //     this.setState(prevState => {
+      //       return { sideDrawerOpen: !prevState.sideDrawerOpen }
+      //     })
+      //   }
+      
+const drawerToggleClickHandler = () => {
+  if (sideDrawerOpen === false) {
+    setSideDrawerOpen(true) 
+  }
+  else {setSideDrawerOpen(false)}
+}
+ 
+
+   const     backdropClickHandler = () => {
+           setSideDrawerOpen(false)
+        }
+  
+  
+  //drawer
+  let backdrop;
+
+      // if (this.state.sideDrawerOpen) {
+      //   backdrop = <Backdrop click={this.backdropClickHandler} />
+      // }
+    if (sideDrawerOpen){
+      backdrop = <Backdrop click={backdropClickHandler}/>
+    }
+      
+    
+          return (
+            <>
+             <div className='bod'>
+            <Router>
+            <Toolbar  drawerClickHandler={drawerToggleClickHandler} 
+            />
+      
+  
+          <SideDrawer show={sideDrawerOpen} click={drawerToggleClickHandler}/>
+          {backdrop}
+      
+       
+         
+              <ProjectProvider>
+              
+              <Switch>
+
+  
+              <Route exact path="/" component={MainPage}/>
+              <Route exact path='/main' component={MainPage} />
+              
+              <Route exact path='/contact' component={ContactPage} />
+              <Route exact path='/portfolio' component={PortfolioPage} />
+             
+              <Route exact path ='/404' component={NotFoundPage} />
+              <Redirect to='/404' />
+              </Switch> 
+  
+              </ProjectProvider>
+              <Footer/>
+         
+       
+          </Router>
+          </div>
+          </>
+      )}
+  
 export default App;
 
 

@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, {  useContext } from "react";
 import ProjectCard from "../ProjectCard";
 import { ProjectContext } from "../../utils/ProjectContext"
 
