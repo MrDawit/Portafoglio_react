@@ -2,13 +2,14 @@ import React from 'react';
 
 import Spacer from '../components/Spacer';
 import "../assets/css/aboutPage.css";
-import {motion} from 'framer-motion';
+
 import resume from '../assets/files/SHALOM DAWIT Resume.pdf';
+
 
 const AboutPage = () => {
 
     return (
-     
+    
             <div className="bod">
                 {/* <Navbar /> */}
 
@@ -48,7 +49,6 @@ const AboutPage = () => {
 
                 {/*  <Footer /> */}
             </div>
-        // </motion.div>
     );
 };
 

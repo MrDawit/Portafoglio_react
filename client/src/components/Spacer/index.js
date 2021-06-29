@@ -28,7 +28,7 @@ useEffect(() => {
     <>
     
   <div >
-    <div style={{color: testColor}}>FOODDDDDDD</div>
+    <div style={{color: testColor}}>FOOD for Thought-test</div>
     <div id="globe">
   <img id="globe_spacer" 
   // className={`undefined ${
