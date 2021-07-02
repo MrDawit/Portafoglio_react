@@ -11,11 +11,11 @@ function Spacer() {
   //   }
   // }, []);
 
-  const [testColor, setTestColor] = useState("white")
+  const [testOpacity, setOpacity] = useState("1")
   const listenScrollEvent = () => {
-    window.scrollY > 500
-      ? setTestColor("yellow")
-      : setTestColor("pink")
+    window.scrollY > 650
+      ? setOpacity(".2")
+      : setOpacity("1")
   }
 // Similar to componentDidMount and componentDidUpdate:
 useEffect(() => {
@@ -28,13 +28,13 @@ useEffect(() => {
     <>
     
   <div >
-    <div style={{color: testColor}}>FOOD for Thought-test</div>
+    {/* <div style={{color: testColor}}>FOOD for Thought-test</div> */}
     <div id="globe">
   <img id="globe_spacer" 
   // className={`undefined ${
   //         small ? "small" : ""
   //       }`} 
-  
+  style={{opacity: testOpacity}}
         src={require('../../assets/img/globe3.png').default} alt={"spacer"}/>
     </div>
     {/* <div id="image_spacer"> */}
