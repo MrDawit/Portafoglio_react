@@ -1,4 +1,5 @@
 import React from 'react';
+import {motion} from 'framer-motion';
 import ContactForm from '../components/ContactForm';
 import Spacer from '../components/Spacer';
 import "../assets/css/contactPage.css";
@@ -41,6 +42,19 @@ const ContactPage = () => {
 // };
 
     return (
+        <motion.div initial="hidden" animate="visible" variants={{
+            hidden: {
+                scale: .8,
+                opacity: 0
+            },
+            visible: {
+                scale: 1,
+                opacity: 1,
+                transition: {
+                    delay: .4
+                }
+            },
+        }}> 
         <div className="bod">
             {/* <Navbar /> */}
             {/* <ul>
@@ -95,6 +109,7 @@ const ContactPage = () => {
             <Spacer />
             {/* <Footer /> */}
         </div>
+        </motion.div>
     )
 };
 
