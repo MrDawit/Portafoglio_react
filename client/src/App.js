@@ -1,4 +1,4 @@
-// import React, { Component } from 'react';
+
 import React, { useState } from 'react';
 import './App.css';
 
@@ -54,14 +54,7 @@ function App() {
 
   return (
     <>
-      <div className='bod'>
-        <Router>
-          <Toolbar drawerClickHandler={drawerToggleClickHandler} />
-          <SideDrawer show={sideDrawerOpen} click={drawerToggleClickHandler} />
-          {backdrop}
-          <ProjectProvider>
-            <Switch>
-            <motion.div initial="hidden" animate="visible" variants={{
+    <motion.div initial="hidden" animate="visible" variants={{
             hidden: {
                 scale: .8,
                 opacity: 0
@@ -74,8 +67,16 @@ function App() {
                 }
             },
         }}> 
+      <div className='bod'>
+        <Router>
+          <Toolbar drawerClickHandler={drawerToggleClickHandler} />
+          <SideDrawer show={sideDrawerOpen} click={drawerToggleClickHandler} />
+          {backdrop}
+          <ProjectProvider>
+            <Switch>
+            
         <Route exact path="/" component={MainPage} />
-        </motion.div>
+        
               <Route exact path='/main' component={MainPage} />
               <Route exact path='/contact' component={ContactPage} />
               <Route exact path='/portfolio' component={PortfolioPage} />
@@ -86,6 +87,7 @@ function App() {
           <Footer />
         </Router>
       </div>
+      </motion.div>
     </>
   )
 }
