@@ -30,7 +30,8 @@ import Backdrop from './components/Backdrop';
 import {motion} from 'framer-motion';
 import Tilt from './components/Tilt/Tilt.js';
 import modernBackground from './assets/img/modern5.jpg';
-import modernForeground from './assets/img/modern.jpg';
+// Tilt component image supercedes this image
+// import modernForeground from './assets/img/MySQL.jpg';
 
 //Duplicate react test
 require('react-dom');
@@ -103,9 +104,11 @@ function App() {
           <Tilt
             options={options}
           >
-            <img src={modernForeground} alt="" />
+            {/* image inside Tilt component has precedence. test changing component name to achieve desired result
+             <img src={modernForeground} alt="mForeground" />  */}
           </Tilt>
         </Tilt>
+        {/* <Tilting/> */}
           <Footer />
         </Router>
       </div>
