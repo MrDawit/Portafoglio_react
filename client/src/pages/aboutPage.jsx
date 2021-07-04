@@ -7,7 +7,7 @@ import resume from '../assets/files/SHALOM DAWIT Resume.pdf';
 
 
 const AboutPage = () => {
-
+ 
     return (
         <motion.div initial="hidden" animate="visible" variants={{
             hidden: {
