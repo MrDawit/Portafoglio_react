@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import tiltForeground from '../../assets/img/Globe.jpg';
+// import tiltForeground from '../../assets/img/Globe.jpg';
+import Spacer from '../Spacer/index.js';
 //  import 'react-tilt';
 import {findDOMNode} from 'react-dom';
 
@@ -10,6 +11,7 @@ const styles = {
   justifyContent: 'center',
   alignItems: 'center',
   minHeight: '100vh',
+  maxHeight: '150vh'
 }
 class Tilt extends Component {
   constructor(props) {
@@ -157,7 +159,8 @@ class Tilt extends Component {
           onMouseMove={this.handleMouseMove}
           onMouseLeave={this.handleMouseLeave}
         >
-          <img src={tiltForeground} alt="tiltForegroundImage" />
+          {/* <img src={tiltForeground} alt="tiltForegroundImage" /> */}
+          <Spacer/>
         </div>
       </div>
     )

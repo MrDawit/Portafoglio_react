@@ -31,7 +31,7 @@ import {motion} from 'framer-motion';
 import Tilt from './components/Tilt/Tilt.js';
 import modernBackground from './assets/img/modern5.jpg';
 // Tilt component image supercedes this image
-// import modernForeground from './assets/img/MySQL.jpg';
+// import tiltForeground from './assets/img/Globe.jpg';
 
 //Duplicate react test
 require('react-dom');
@@ -60,6 +60,8 @@ function App() {
     perspective: 1000,
     scale: 1.05,
   }
+
+
   return (
     <>
     <motion.div initial="hidden" animate="visible" variants={{
@@ -92,23 +94,24 @@ function App() {
               <Redirect to='/404' />
             </Switch>
           </ProjectProvider>
-          <Tilt
-          options={{}}
+          {/* <Tilt
+          options={{options}}
           style={{
             background: `url(${modernBackground}) no-repeat fixed center`,
             backgroundSize: 'fit',
             height: 700,
             width: 740,
           }}
-        >
-          <Tilt
-            options={options}
-          >
-            {/* image inside Tilt component has precedence. test changing component name to achieve desired result
-             <img src={modernForeground} alt="mForeground" />  */}
-          </Tilt>
-        </Tilt>
-        {/* <Tilting/> */}
+       /> */}
+          {/* <Tilt
+            options={options} 
+          > */}
+            {/* image inside Tilt component has precedence. test changing component name to achieve desired result 
+             <img src={modernForeground} alt="mForeground" /> */} 
+             {/* <img  alt="tiltForegroundImage" />
+             </Tilt>
+          </Tilt> */}
+       
           <Footer />
         </Router>
       </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import {motion} from 'framer-motion';
-import Spacer from '../components/Spacer';
+// import Spacer from '../components/Spacer';
+import Tilt from '../components/Tilt/Tilt.js';
 import "../assets/css/aboutPage.css";
 
 import resume from '../assets/files/SHALOM DAWIT Resume.pdf';
@@ -57,7 +58,8 @@ const AboutPage = () => {
                         </div>
                     </div>
                 </main>
-                <Spacer />
+                {/* <Spacer /> */}
+                <Tilt/>
 
                 {/*  <Footer /> */}
             </div>

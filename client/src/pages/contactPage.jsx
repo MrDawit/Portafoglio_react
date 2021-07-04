@@ -1,7 +1,8 @@
 import React from 'react';
 import {motion} from 'framer-motion';
 import ContactForm from '../components/ContactForm';
-import Spacer from '../components/Spacer';
+// import Spacer from '../components/Spacer';
+import Tilt from '../components/Tilt/Tilt.js';
 import "../assets/css/contactPage.css";
 // import axios from 'axios';
 
@@ -106,7 +107,8 @@ const ContactPage = () => {
 
 
             </main>
-            <Spacer />
+            {/* <Spacer /> */}
+            <Tilt/>
             {/* <Footer /> */}
         </div>
         </motion.div>
