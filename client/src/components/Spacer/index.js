@@ -10,16 +10,31 @@ function Spacer() {
   //     );
   //   }
   // }, []);
-
-  const [testOpacity, setOpacity] = useState("1")
+  // const handleMove = (e) => {
+  //   e.nativeEvent.clientX
+  //   console.log("F U C K " + e.nativeEvent.clientX); // has value
+  // }
+  const [testOpacity, setOpacity] = useState("")
   const listenScrollEvent = () => {
-    window.scrollY > 650
-      ? setOpacity(".2")
-      : setOpacity("1")
+     window.scrollY > 650 
+    
+      // ? setOpacity(".2")
+      // : setOpacity("1")
+
+      ? setOpacity("gold")
+      : setOpacity("")
   }
+//   const listenMoveEvent = () => {
+//    window.clientX > 100
+//      ? setOpacity(".2")
+//      : setOpacity("1")
+//  }
+
 // Similar to componentDidMount and componentDidUpdate:
 useEffect(() => {
-  window.addEventListener("scroll", listenScrollEvent)
+  window.addEventListener("scroll", listenScrollEvent);
+  // window.addEventListener("nativeEvent",listenMoveEvent);
+
 })
 
 
@@ -27,14 +42,18 @@ useEffect(() => {
   
     <>
     
-  <div >
+  <div style={{background: testOpacity}}>
     {/* <div style={{color: testColor}}>FOOD for Thought-test</div> */}
     <div id="globe">
   <img id="globe_spacer" 
   // className={`undefined ${
   //         small ? "small" : ""
   //       }`} 
-  style={{opacity: testOpacity}}
+
+
+  // style={{opacity: testOpacity}}
+
+  // style={{background: testOpacity}}
         src={require('../../assets/img/globe3.png').default} alt={"spacer"}/>
     </div>
     {/* <div id="image_spacer"> */}

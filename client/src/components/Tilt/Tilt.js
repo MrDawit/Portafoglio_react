@@ -30,13 +30,13 @@ class Tilt extends Component {
       axis: null,
       reset: true
     }  
-    this.width = null
-    this.height = null
-    this.left = null
-    this.top = null
-    this.transitionTimeout = null
-    this.updateCall = null
-    this.element = null
+    // this.width = null
+    // this.height = null
+    // this.left = null
+    // this.top = null
+    // this.transitionTimeout = null
+    // this.updateCall = null
+    // this.element = null
     this.settings = {
       ...defaultSettings,
       ...this.props.options,
@@ -65,7 +65,7 @@ class Tilt extends Component {
     }
     reset() {
     window.requestAnimationFrame(() => {
-      console.log('RESETTING TRANSFORM STATE', `perspective(${this.settings.perspective}px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`)
+     // console.log('RESETTING TRANSFORM STATE', `perspective(${this.settings.perspective}px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`)
           this.setState(prevState => ({
         style: {
           ...prevState.style,
@@ -85,7 +85,7 @@ class Tilt extends Component {
   }
   setTransition() {
    clearTimeout(this.transitionTimeout)
-    console.log('SET TRANSITION', `Speed: ${this.settings.speed}ms Easing: ${this.settings.easing}`)
+   // console.log('SET TRANSITION', `Speed: ${this.settings.speed}ms Easing: ${this.settings.easing}`)
    this.setState(prevState => ({
      style: {
        ...prevState.style,
@@ -93,7 +93,7 @@ class Tilt extends Component {
      }
    }))
    this.transitionTimeout = setTimeout(() => {
-    console.log('TRANSITION COMPLETE')
+   // console.log('TRANSITION COMPLETE')
       this.setState(prevState => ({
         style: {
           ...prevState.style,
@@ -118,8 +118,8 @@ class Tilt extends Component {
     const tiltY = (this.reverse * (_y * this.settings.max - this.settings.max / 2)).toFixed(2)  
     const percentageX = _x * 100
     const percentageY = _y * 100  
-    console.log('JUST GOT NEW VALUES', `X: ${x} Y: ${y} -- TILT X: ${tiltX} TILT Y: ${tiltY} -- TILT X%: ${percentageX} TILT Y%: ${percentageY}`)
-    console.log('Notice how X turned into percentageX.')  
+   // console.log('JUST GOT NEW VALUES', `X: ${x} Y: ${y} -- TILT X: ${tiltX} TILT Y: ${tiltY} -- TILT X%: ${percentageX} TILT Y%: ${percentageY}`)
+   // console.log('Notice how X turned into percentageX.')  
     return {
       tiltX,
       tiltY,
@@ -136,8 +136,8 @@ class Tilt extends Component {
   }
   update(e) {
     let values = this.getValues(e)
-    console.log('VALUES', values)  
-    console.log('NEW CSS TRANSFORM VALUES', `perspective(${this.settings.perspective}px) rotateX(${this.settings.axis === 'x' ? 0 : values.tiltY}deg) rotateY(${this.settings.axis === 'y' ? 0 : values.tiltX}deg) scale3d(${this.settings.scale}, ${this.settings.scale}, ${this.settings.scale})`)
+  //  console.log('VALUES', values)  
+  //  console.log('NEW CSS TRANSFORM VALUES', `perspective(${this.settings.perspective}px) rotateX(${this.settings.axis === 'x' ? 0 : values.tiltY}deg) rotateY(${this.settings.axis === 'y' ? 0 : values.tiltX}deg) scale3d(${this.settings.scale}, ${this.settings.scale}, ${this.settings.scale})`)
     this.setState(prevState => ({
       style: {
         ...prevState.style,
