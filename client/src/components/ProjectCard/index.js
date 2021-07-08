@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css"
-
+import LazyLoad from 'react-lazy-load';
 
 const ProjectCard = ({ name, descriptionShort, imageURL, deployURL, gitHubRepo, loginInfo, skills }) => {
 
@@ -11,8 +11,9 @@ const ProjectCard = ({ name, descriptionShort, imageURL, deployURL, gitHubRepo, 
         {/* <a target="_blank" rel="noreferrer" href={deployURL}> */}
           <div className="card-image">
           <a target="_blank" rel="noreferrer" href={deployURL}>
+          <LazyLoad>
             <img className="portfolio-img" alt="holding pattern" src={imageURL}></img>
-            
+            </LazyLoad>
             <div className="overlay">
               <div className="text">{name}</div>
             </div></a>
