@@ -32,8 +32,8 @@ function Spacer() {
 
 
     if (clientX > 200 && clientX < 900){
-      setBackgroundColor("purple");
-      setBorderRadius("400px 400px 400px 400px");
+      setBackgroundColor("linear-gradient(to bottom, black, purple, violet, purple, black, black");
+      setBorderRadius("50%");
     }
     else {
       setBackgroundColor("");
@@ -53,9 +53,9 @@ function Spacer() {
   });
 
   return (
-
+//change style to className or id to keep css on stylesheet  
     <>
-      <div style={{ background: backgroundColor, borderRadius:borderRadius }}>
+      <div  style={{ background: backgroundColor, borderRadius:borderRadius }}>
         {/* <div style={{color: testColor}}>FOOD for Thought-test</div> */}
         <div id="globe">
           <img id="globe_spacer"

@@ -11,7 +11,7 @@ const ProjectCard = ({ name, descriptionShort, imageURL, deployURL, gitHubRepo, 
         {/* <a target="_blank" rel="noreferrer" href={deployURL}> */}
           <div className="card-image">
           <a target="_blank" rel="noreferrer" href={deployURL}>
-          <LazyLoad>
+          <LazyLoad offsetVertical={1000} onContentVisible={false}>
             <img className="portfolio-img" alt="holding pattern" src={imageURL}></img>
             </LazyLoad>
             <div className="overlay">
