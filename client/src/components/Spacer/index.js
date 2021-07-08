@@ -4,7 +4,8 @@ import "./style.css";
 function Spacer() {
 
 
-  const [backgroundColor, setBackgroundColor] = useState("")
+  const [backgroundColor, setBackgroundColor] = useState("");
+  const [borderRadius, setBorderRadius] = useState("");
   // const listenScrollEvent = () => {
 
   //    window.scrollY > 650 
@@ -21,13 +22,23 @@ function Spacer() {
   //   const listenMoveEvent = () => {
   const listenMouseMove = useCallback(
     ({ clientX }) => {
-      //  window.clientX > 100
-      clientX > 300
-        //  ? setOpacity(".2")
-        //  : setOpacity("1")
-        ? setBackgroundColor("purple")
-        // ? console.log("DID IT")
-        : setBackgroundColor("")
+    //   //  window.clientX > 100
+    //   clientX > 300
+    //     //  ? setOpacity(".2")
+    //     //  : setOpacity("1")
+    //     ? setBackgroundColor("purple")
+    //     // ? console.log("DID IT")
+    //     : setBackgroundColor("")
+
+
+    if (clientX > 200 && clientX < 900){
+      setBackgroundColor("purple");
+      setBorderRadius("400px 400px 400px 400px");
+    }
+    else {
+      setBackgroundColor("");
+      setBorderRadius("");
+    }
     },
     []
   );
@@ -44,7 +55,7 @@ function Spacer() {
   return (
 
     <>
-      <div style={{ background: backgroundColor }}>
+      <div style={{ background: backgroundColor, borderRadius:borderRadius }}>
         {/* <div style={{color: testColor}}>FOOD for Thought-test</div> */}
         <div id="globe">
           <img id="globe_spacer"
@@ -56,7 +67,7 @@ function Spacer() {
             // style={{opacity: testOpacity}}
 
             // style={{background: testOpacity}}
-            src={require('../../assets/img/globe3.png').default} alt={"spacer"} />
+            src={require("../../assets/img/globe3.png").default} alt={"spacer"} />
         </div>
         {/* <div id="image_spacer"> */}
         <img id="image_spacer" src={require("../../assets/img/spacer.jpg").default} alt={"spacer"} />
