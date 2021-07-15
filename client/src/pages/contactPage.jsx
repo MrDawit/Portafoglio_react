@@ -1,5 +1,5 @@
 import React from 'react';
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 import ContactForm from '../components/ContactForm';
 // import Spacer from '../components/Spacer';
 import Tilt from '../components/Tilt/Tilt.js';
@@ -14,33 +14,33 @@ const ContactPage = () => {
     // const submitRequest = async event => {
     //     event.preventDefault();
     //sending the request through axios also works nicely
-// axios.post('/api/contact',{ name,email, subject, message })
+    // axios.post('/api/contact',{ name,email, subject, message })
     // };
 
-//WORKS
-// const [email, setEmail] = useState('');
-// const [message, setMessage] = useState('');
-// const submitRequest = async (e) => {
-//     e.preventDefault();
-//     console.log({ email, message });
+    //WORKS
+    // const [email, setEmail] = useState('');
+    // const [message, setMessage] = useState('');
+    // const submitRequest = async (e) => {
+    //     e.preventDefault();
+    //     console.log({ email, message });
 
-//     const url = '/api/contact';
-//     const options = {
-//       method: 'POST',
-//       headers: {
-//         'Content-Type': 'application/json;charset=UTF-8'
-//       },
-//       body: JSON.stringify({
-//          email,
-//          message
-//       })
-//     };
-    
-//     fetch(url, options)
-//       .then(response => {
-//         console.log(response.status);
-//       });
-// };
+    //     const url = '/api/contact';
+    //     const options = {
+    //       method: 'POST',
+    //       headers: {
+    //         'Content-Type': 'application/json;charset=UTF-8'
+    //       },
+    //       body: JSON.stringify({
+    //          email,
+    //          message
+    //       })
+    //     };
+
+    //     fetch(url, options)
+    //       .then(response => {
+    //         console.log(response.status);
+    //       });
+    // };
 
     return (
         <motion.div initial="hidden" animate="visible" variants={{
@@ -55,22 +55,22 @@ const ContactPage = () => {
                     delay: .4
                 }
             },
-        }}> 
-        <div className="bod">
-            {/* <Navbar /> */}
-            {/* <ul>
+        }}>
+            <div className="bod">
+                {/* <Navbar /> */}
+                {/* <ul>
                 {["I ", "am a ", "Coder"].map((contact, idx) => {
                     return <li key={idx}>{contact}</li>
                 })}
             </ul> */}
 
-            <main className="col-xs-12 col-lg-10">
+                <main className="col-xs-12 col-lg-10">
 
 
-                <h1>Contact</h1>
-                <ContactForm />
+                    <h1>Contact</h1>
+                    <ContactForm />
 
-                        {/* WORKS
+                    {/* WORKS
                 <form  onSubmit={submitRequest}>
             <label >Name:</label>
             <br />
@@ -106,11 +106,11 @@ const ContactPage = () => {
 
 
 
-            </main>
-            {/* <Spacer /> */}
-            <Tilt/>
-            {/* <Footer /> */}
-        </div>
+                </main>
+                {/* <Spacer /> */}
+                <Tilt />
+                {/* <Footer /> */}
+            </div>
         </motion.div>
     )
 };
