@@ -1,14 +1,17 @@
-import React from 'react';
-import {motion} from 'framer-motion';
+import React, { useContext } from 'react';
+import { motion } from 'framer-motion';
 // import Spacer from '../components/Spacer';
 import Tilt from '../components/Tilt/Tilt.js';
 import "../assets/css/aboutPage.css";
-
+import SkillIconList from "../components/SkillIconList/index"
+import { SkillIconProvider } from "../utils/IconContext";
+// import { SkillIconContext } from "../utils/IconContext";
 import resume from '../assets/files/SHALOM DAWIT Resume.pdf';
 
 
 const AboutPage = () => {
- 
+  
+
     return (
         <motion.div initial="hidden" animate="visible" variants={{
             hidden: {
@@ -22,7 +25,7 @@ const AboutPage = () => {
                     delay: .4
                 }
             },
-        }}> 
+        }}>
             <div className="bod">
                 {/* <Navbar /> */}
 
@@ -30,9 +33,11 @@ const AboutPage = () => {
                     <div id="skillsAbout">
 
                         <h3>Skills </h3>
+                        <SkillIconProvider>
+                            <SkillIconList />
+                        </SkillIconProvider>
 
-
-                        <img alt={"html5"} src={require("../assets/img/html5.png").default} className="skillsIcon" />
+                        {/* <img alt={"html5"} src={require("../assets/img/html5.png").default} className="skillsIcon" />
                         <img alt={"css3"} src={require("../assets/img/css3.png").default} className="skillsIcon" />
                         <img alt={"javascript"} src={require("../assets/img/JS.png").default} className="skillsIcon" />
                         <img alt={"jquery"} src={require("../assets/img/jQuery.png").default} className="skillsIcon" />
@@ -43,7 +48,7 @@ const AboutPage = () => {
                         <img alt={"nodeJS"} src={require("../assets/img/nodeJS.png").default} className="skillsIcon" />
                         <img alt={"npm"} src={require("../assets/img/npm_logo.png").default} className="skillsIcon" />
                         <img alt={"express"} src={require("../assets/img/express.png").default} className="skillsIcon" />
-                        <img alt={"bootsrap"} src={require("../assets/img/bootstrap.png").default} className="skillsIcon" />
+                        <img alt={"bootsrap"} src={require("../assets/img/bootstrap.png").default} className="skillsIcon" /> */}
 
                         <div id="bio">
 
@@ -59,11 +64,11 @@ const AboutPage = () => {
                     </div>
                 </main>
                 {/* <Spacer /> */}
-                <Tilt/>
+                <Tilt />
 
                 {/*  <Footer /> */}
             </div>
-            </motion.div>
+        </motion.div>
     );
 };
 
