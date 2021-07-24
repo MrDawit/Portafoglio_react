@@ -31,7 +31,7 @@ function Spacer() {
   return (
 //change style to className or id to keep css on stylesheet  
     <>
-      <div  style={{ background: backgroundColor, borderRadius:borderRadius }}>
+      <div id="outer_spacer" style={{ background: backgroundColor, borderRadius:borderRadius }}>
  
         <div id="globe">
           <img id="globe_spacer"

@@ -4,7 +4,8 @@ import Spacer from '../Spacer/index.js';
 //  import 'react-tilt';
 import {findDOMNode} from 'react-dom';
 
-
+//horizontal lines and element outline for animation only occur on firefox browser
+// This does not occur in Troubleshoot mode (extension or theme causing issue)
 const styles = {
   display: 'flex',
   flexDirection: 'column',
