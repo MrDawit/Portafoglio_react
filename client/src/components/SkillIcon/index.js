@@ -2,10 +2,8 @@ import React from "react";
 
 
 const SkillIcon = ({ name, iconUrl }) => {
-
     return (
-        
-            <img alt={name} src={iconUrl} className="skillsIcon" />    
+        <img alt={name} src={iconUrl} className="skillsIcon" />
     )
 };
 

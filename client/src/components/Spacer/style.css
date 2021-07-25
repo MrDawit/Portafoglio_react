@@ -40,6 +40,14 @@
     border: 5px solid #000;
   
 }
+
+
+.centered {
+  font-size: large;
+    top: 50%;
+    left: 150%;
+  
+  }
 /* 
 #globe{
     position: relative;
