@@ -14,7 +14,7 @@ export const ProjectProvider = props => {
             imageURL: require("../assets/img/toolshed.png").default,
             gitHubRepo:"https://github.com/MrDawit/ToolShed",
             deployURL:"https://toolshed-app-team8.herokuapp.com/",
-            skills: "React, REST API, BLK systems framework, Bootstrap, MySQL, NodeJS, Javascript, HTML, CSS",
+            skills: "React, REST API, OKTA, BLK systems framework, Bootstrap, MySQL, NodeJS, Javascript, HTML, CSS",
             id: 1
         },
         {
