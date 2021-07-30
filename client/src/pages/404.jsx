@@ -6,7 +6,7 @@ const NotFoundPage = () => {
 
     return (
         <div id="container404">
-            <h2 className="text404">404:Page Not Found!</h2>
+            <h3 className="text404">404:Page Not Found!</h3>
             {/* <Link to='/home' /> */}
         </div>
         );
