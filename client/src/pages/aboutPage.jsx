@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import Spacer from '../components/Spacer';
+// For heroku reasons, removed Tilt module ("react-tilt": "^0.1.4") from ../../../package.json 
 // import Tilt from '../components/Tilt/Tilt.js';
 import "../assets/css/aboutPage.css";
 import SkillIconList from "../components/SkillIconList/index"
