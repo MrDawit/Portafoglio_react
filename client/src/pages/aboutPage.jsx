@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
-// import Spacer from '../components/Spacer';
-import Tilt from '../components/Tilt/Tilt.js';
+import Spacer from '../components/Spacer';
+// import Tilt from '../components/Tilt/Tilt.js';
 import "../assets/css/aboutPage.css";
 import SkillIconList from "../components/SkillIconList/index"
 import { SkillIconProvider } from "../utils/IconContext";
@@ -50,8 +50,8 @@ const AboutPage = () => {
                         </div>
                     </div>
                 </main>
-                {/* <Spacer /> */}
-                <Tilt />
+                <Spacer />
+                {/* <Tilt /> */}
 
                 {/*  <Footer /> */}
             </div>

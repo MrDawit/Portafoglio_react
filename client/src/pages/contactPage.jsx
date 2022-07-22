@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ContactForm from '../components/ContactForm';
-import Tilt from '../components/Tilt/Tilt.js';
+import Spacer from '../components/Spacer';
+// import Tilt from '../components/Tilt/Tilt.js';
 import "../assets/css/contactPage.css";
 
 const ContactPage = () => {
@@ -26,7 +27,8 @@ const ContactPage = () => {
                     <ContactForm />
 
                 </main>
-                <Tilt />
+                <Spacer />
+                {/* <Tilt /> */}
             </div>
         </motion.div>
     )
