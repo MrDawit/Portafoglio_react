@@ -37,9 +37,9 @@
     "if-env": "^1.0.4",
     "nodemailer": "^6.9.1",
     "nodemon": "^2.0.22",
-    "react": "^17.0.1",
-    "react-bootstrap": "^1.4.3",
-    "react-dom": "^17.0.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
+    "react-dom": "^18.2.0",
     "react-lazy-load": "^4.0.1",
     "run-all": "^1.0.1"
   },
