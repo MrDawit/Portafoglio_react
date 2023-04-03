@@ -98,12 +98,12 @@ function ContactForm() {
         <div id="contact_links">
           <a href="https://www.linkedin.com/in/shalom-dawit-a0a5a4126"
             target="_blank" rel="noreferrer">
-            <img className="contact_icon" alt="LinkedIn_Image" src={require("../../assets/img/icon-linkedin.png").default} />
+            <img className="contact_icon" alt="LinkedIn_Image" src={require("../../assets/img/icon-linkedin.png")} />
           </a>
           <br />
 
           <a href={"https://github.com/MrDawit"} target="_blank" rel="noreferrer">
-            <img className="contact_icon" alt="Github_Image" src={require("../../assets/img/github-logo.png").default} />
+            <img className="contact_icon" alt="Github_Image" src={require("../../assets/img/github-logo.png")} />
           </a>
         </div>
       </form>
