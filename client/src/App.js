@@ -93,7 +93,7 @@ function App() {
               <Route exact path='/portfolio' element={<PortfolioPage/>} />
               {/* <Route exact path='/404' component={NotFoundPage} /> */}
               <Route exact path='/NotFoundPage' element={<NotFoundPage/>} />
-              <Route path='/404' element={<Navigate replace to="/NotFoundPage" />} />
+              <Route path='*' element={<Navigate replace to="/NotFoundPage" />} />
 
 
               {/* <Navigate to='/404' replace={true} /> */}
