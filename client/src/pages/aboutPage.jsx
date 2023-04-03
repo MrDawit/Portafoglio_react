@@ -42,7 +42,7 @@ const AboutPage = () => {
               <h1>Bio</h1>
               <img
                 alt={"Shalom Dawit"}
-                src={require("../assets/img/PIC.JPG").default}
+                src={require("../assets/img/PIC.JPG")}
                 className="image-wrapper float-left img-responsive pr-2"
                 id="bioImage"
               />
