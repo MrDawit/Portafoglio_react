@@ -6,8 +6,9 @@ import {
   HashRouter as Router,
   //  BrowserRouter as Router,
   Route,
-  Switch,
-  Redirect
+  // Switch,
+  Routes,
+  Navigate
 } from 'react-router-dom';
 
 //Pages
@@ -83,17 +84,20 @@ function App() {
           <SideDrawer show={sideDrawerOpen} click={drawerToggleClickHandler} />
           {backdrop}
           <ProjectProvider>
-            <Switch>
+            <Routes>
             
-        <Route exact path="/" component={MainPage} />
+        <Route exact path="/" element={<MainPage/>} />
         
-              <Route exact path='/main' component={MainPage} />
-              <Route exact path='/contact' component={ContactPage} />
-              <Route exact path='/portfolio' component={PortfolioPage} />
+              <Route exact path='/main' element={<MainPage/>} />
+              <Route exact path='/contact' element={<ContactPage/>} />
+              <Route exact path='/portfolio' element={<PortfolioPage/>} />
               {/* <Route exact path='/404' component={NotFoundPage} /> */}
-              <Route component={NotFoundPage} />
-              <Redirect to='/404' />
-            </Switch>
+              <Route exact path='/NotFoundPage' element={<NotFoundPage/>} />
+              <Route path='/404' element={<Navigate replace to="/NotFoundPage" />} />
+
+
+              {/* <Navigate to='/404' replace={true} /> */}
+            </Routes>
           </ProjectProvider>
        
           <Footer />
