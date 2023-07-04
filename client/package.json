@@ -20,7 +20,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-page -d build",
+    "deploy": "gh-pages -d build",
     "start": "set Port=3080 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
