@@ -1,13 +1,13 @@
-FROM node:18.16.1 AS ui-build
+FROM node:18 AS ui-build
 
 WORKDIR /client
-COPY . /client
+COPY package.json /client
 RUN npm install
-COPY src/ /client
-COPY public/ /client
+COPY src /client
+COPY public /client
 RUN npm run build
 
-FROM node:18.16.1 AS server-build
+FROM node:18 AS server-build
 
 WORKDIR /
 
