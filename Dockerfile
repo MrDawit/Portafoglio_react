@@ -1,10 +1,10 @@
 FROM node:18 as ui-build
 
-WORKDIR /client/
-COPY package.json ./
+WORKDIR /client
+COPY . /client
 RUN npm install
-COPY src/ ./src
-COPY public/ ./public
+COPY src/ /client
+COPY public/ /client
 RUN npm run build
 
 FROM node:18 as server-build
