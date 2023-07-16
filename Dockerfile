@@ -1,26 +1,13 @@
-FROM node:18 AS ui-build
+FROM node:17-alpine
 
-WORKDIR /app/client
-COPY ./client/package.json .
-RUN npm install
-COPY ./client/src .
-COPY ./client/public .
-RUN npm run build
+ WORKDIR /app  
 
-FROM node:18 AS server-build
+COPY package.json .  
 
-WORKDIR /
+RUN npm install  
 
-COPY --from=ui-build /app/client/build ./client/build
-WORKDIR /
+COPY . .  
 
-COPY package.json .
-RUN npm install
+EXPOSE 3000  
 
-COPY server.js .
-
-ENV NODE_ENV=production
-
-EXPOSE 5000
-
-CMD ["node","server.js"]
+CMD ["npm", "start"] 
