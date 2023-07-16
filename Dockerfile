@@ -1,23 +1,23 @@
 FROM node:18 AS ui-build
 
-WORKDIR /client
-COPY package.json /client
+WORKDIR /app/client
+COPY ./client/package.json .
 RUN npm install
-COPY src /client
-COPY public /client
+COPY ./client/src .
+COPY ./client/public .
 RUN npm run build
 
 FROM node:18 AS server-build
 
 WORKDIR /
 
-COPY --from=ui-build /client/build ./client/build
+COPY --from=ui-build /app/client/build ./client/build
 WORKDIR /
 
-COPY package.json /
+COPY package.json .
 RUN npm install
 
-COPY server.js /
+COPY server.js .
 
 ENV NODE_ENV=production
 
