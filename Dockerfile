@@ -1,26 +1,11 @@
 FROM node:18 AS ui-build
 
 WORKDIR /app/client
-COPY ./client/package.json .
+COPY ./client/package*.json ./
 RUN npm install
-COPY ./client/src .
-COPY ./client/public .
+COPY ./client/src ./
+COPY ./client/public ./
 RUN npm run build
-
-FROM node:18 AS server-build
-
-WORKDIR /
-
-COPY --from=ui-build /app/client/build ./client/build
-WORKDIR /
-
-COPY package.json .
-RUN npm install
-
-COPY server.js .
-
-ENV NODE_ENV=production
-
-EXPOSE 5000
-
-CMD ["node","server.js"]
+ENV PORT=8080
+EXPOSE 8080
+CMD [ "npm", "start" ]
