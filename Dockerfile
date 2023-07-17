@@ -1,7 +1,7 @@
 FROM node:18 AS ui-build
 
 WORKDIR /app/client
-COPY ./client/package*.json ./
+COPY ./client/package.json ./
 RUN npm install
 COPY ./client/src ./
 COPY ./client/public ./
