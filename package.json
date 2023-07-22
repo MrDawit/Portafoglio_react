@@ -44,6 +44,7 @@
     "run-all": "^1.0.1"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^5.0.0"
   }
 }
