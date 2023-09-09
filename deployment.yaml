@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portafoglio
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: portafoglio
+  template:
+    metadata:
+      labels:
+        app: portafoglio
+    spec:
+      containers: 
+        - name: portafoglio
+          image: ghcr.io/mrdawit/portafolio:latest
+          ports:
+            - containerPort: 3000
+          env:
+            - name: PORT
+              value: 3080
+          imagePullPolicy: Always
+
+
+---
+
+# https://kubernetes.io/docs/concepts/services-networking/service/#defining-a-service  
+kind: Service 
+apiVersion: v1 
+metadata: 
+  name: portfoglio-service 
+spec: 
+  selector: 
+    app: portfoglio 
+  ports: 
+  - protocol: TCP 
+    port: 3080 
+    targetPort: 3080 
+    nodePort: 31000 
+  type: NodePort 
