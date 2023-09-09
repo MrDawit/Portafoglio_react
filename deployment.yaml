@@ -14,7 +14,11 @@ spec:
     spec:
       containers: 
         - name: portafoglio
-          image: ghcr.io/mrdawit/portafolio:latest
+          image: mrdawit/portafoglio:1.0.0
+          resources:
+            limits:
+              memory: 999Mi
+              cpu: "1"
           ports:
             - containerPort: 3080
           env:
