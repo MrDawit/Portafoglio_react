@@ -42,7 +42,7 @@
     "react-dom": "^18.2.0",
     "react-lazy-load": "^4.0.1",
     "run-all": "^1.0.1",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.0"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
