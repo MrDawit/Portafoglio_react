@@ -1,7 +1,7 @@
 {
   "name": "portafoglio_inner",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://mrdawit.github.io/Portafoglio_react/",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
