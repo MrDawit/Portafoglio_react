@@ -23,6 +23,8 @@
   },
   "homepage": "",
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-transform-private-property-in-object": "^7.24.7",
     "@popperjs/core": "^2.11.7",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
