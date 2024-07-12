@@ -7,6 +7,6 @@ COPY . ./
 #COPY ./client/src ./
 #COPY ./client/public ./
 RUN npm run build
-ENV PORT=3086
-EXPOSE 3087
+ENV PORT=3080
+EXPOSE 3080
 CMD [ "npm", "start" ]

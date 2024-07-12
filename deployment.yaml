@@ -20,10 +20,10 @@ spec:
               memory: 999Mi
               cpu: "1"
           ports:
-            - containerPort: 3083
+            - containerPort: 3080
           env:
             - name: PORT
-              value: "3082"
+              value: "3080"
           imagePullPolicy: Always
 
 
@@ -39,7 +39,7 @@ spec:
     app: portfoglio 
   ports: 
   - protocol: TCP 
-    port: 3084 
-    targetPort: 3085 
+    port: 3080 
+    targetPort: 3080 
     nodePort: 31000 
   type: NodePort 
