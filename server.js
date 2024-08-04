@@ -1,5 +1,5 @@
 
-
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
@@ -24,6 +24,7 @@ if (process.env.NODE_ENV === 'production') {
   app.get('/', function(req, res) {
     res.sendFile('client/build', 'index.html');
   });
+  console.log("server in production mode");
 }
 
 
