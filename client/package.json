@@ -6,7 +6,7 @@
     "start": "react-scripts start",
     "prestart:prod": "npm install",
     "start:prod": "react-scripts build",
-    "poststart:prod": "cd .. && node server.js",
+    "(OnlyDevMode)poststart:prod": "cd .. && node server.js",
     "wrongstart:prod": "react-scripts start && npm run start2:prod",
     "start2:prod": "cd .. && node server.js",
     "wrongAgainpoststart:prod": "react-scripts start",
