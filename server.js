@@ -5,6 +5,10 @@ const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 
 const PORT = process.env.PORT || 8080;
+
+//conditional for child_process working under cross platform conditions
+const start = (process.platform == 'darwin'? 'open': process.platform == 'win32'? 'start': 'xdg-open');
+
  const app = express();
 
 
@@ -28,26 +32,22 @@ if (process.env.NODE_ENV === 'production') {
   
   //listen for requests
   app.listen(PORT, () => {
+
     if (process.env.NODE_ENV_PRODUCTION_TEST === 'true') {
-        //opens up localhost address on browser (windows)
-        require('child_process').exec(`start http://localhost:${PORT}/`);
+        //opens up localhost address on browser
+        require('child_process').exec(`${start} http://localhost:${PORT}/`);
         console.log(`Server is running on port ${PORT} in production mode.`);
     }else {
-          //opens up production address on browser (windows)
-          require('child_process').exec(`start https://portafoglioreact.onrender.com/`);
+          //opens up production address on browser 
+          require('child_process').exec(`${start} https://portafoglioreact.onrender.com/`);
           console.log(`Server is running on port ${PORT} in production address.`);
-          console.log(`PRODUCTION TEST ENV VARIABLE = ${process.env.NODE_ENV_PRODUCTION_TESTING || 'NONE'} `)
+          console.log(`PRODUCTION TEST (env variable) = ${process.env.NODE_ENV_PRODUCTION_TESTING || 'NONE'} `)
     }    
   });
 }else{
-
-
-// // serve PORT running here
-
+//listen for requests in development mode
 app.listen(PORT, () =>{ 
-  //opens up address on browser (windows)
-  require('child_process').exec(`start http://localhost:${PORT}/`);
-  console.info(`server has started on ${PORT}`);
+  console.info(`server has started on ${PORT} in development mode`);
 
 });
 };
