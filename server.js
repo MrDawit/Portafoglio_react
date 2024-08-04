@@ -30,4 +30,9 @@ if (process.env.NODE_ENV === 'production') {
 
 // // serve PORT running here
 const PORT = process.env.PORT || 8080
-app.listen(PORT, () => console.info(`server has started on ${PORT}`))
+app.listen(PORT, () =>{ 
+  //opens up address on browser (windows)
+  require('child_process').exec(`start http://localhost:${PORT}/`);
+  console.info(`server has started on ${PORT}`);
+
+});
