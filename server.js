@@ -41,7 +41,7 @@ if (process.env.NODE_ENV === 'production') {
           //opens up production address on browser 
           require('child_process').exec(`${start} https://portafoglioreact.onrender.com/`);
           console.log(`Server is running on port ${PORT} in production address.`);
-          console.log(`PRODUCTION TEST (env variable) = ${process.env.NODE_ENV_PRODUCTION_TESTING || 'NONE'} `)
+          console.log(`PRODUCTION TEST (env variable) = ${process.env.NODE_ENV_PRODUCTION_TEST || 'NONE'} `);
     }    
   });
 }else{
