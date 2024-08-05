@@ -13,7 +13,7 @@ export const ProjectProvider = props => {
             descriptionShort: "A REACT app to help users not lose their tools!",
             imageURL: require("../assets/img/toolshed.png"),
             gitHubRepo:"https://github.com/MrDawit/ToolShed",
-            deployURL:"https://toolshed-app-team8.herokuapp.com/",
+            deployURL:"https://toolshed.onrender.com/",
             skills: "React, REST API, OKTA, BLK systems framework, Bootstrap, MySQL, NodeJS, Javascript, HTML, CSS",
             id: 1
         },
@@ -32,8 +32,8 @@ export const ProjectProvider = props => {
             name: "Recipe Tracker",
             descriptionShort: "An App to organize your recipes",
             imageURL: require("../assets/img/main.png"),
-            gitHubRepo:"https://github.com/lcalderin12/Recipe-Tracker",
-            deployURL:"https://recipes-tracker-hanzee.herokuapp.com/",
+            gitHubRepo:"https://github.com/MrDawit/Recipe-Tracker",
+            deployURL:"https://mrdawitrecipe-tracker.onrender.com",
             loginInfo:"* (For Login) EMAIL: Shalom.Dawit@gmail.com PASSWORD: food",
             skills: "JavaScript, HTML, CSS3, REST API, NodeMailer, NodeJS, Express Handlebars, JQuery, AJAX, Passport, Sequelize, Bootstrap ",
             id: 3
