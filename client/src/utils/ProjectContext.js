@@ -33,7 +33,7 @@ export const ProjectProvider = props => {
             descriptionShort: "An App to organize your recipes",
             imageURL: require("../assets/img/main.png"),
             gitHubRepo:"https://github.com/MrDawit/Recipe-Tracker",
-            deployURL:"https://mrdawitrecipe-tracker.onrender.com",
+            deployURL:"https://recipe-tracker-3dbj.onrender.com",
             loginInfo:"* (For Login) EMAIL: Shalom.Dawit@gmail.com PASSWORD: food",
             skills: "JavaScript, HTML, CSS3, REST API, NodeMailer, NodeJS, Express Handlebars, JQuery, AJAX, Passport, Sequelize, Bootstrap ",
             id: 3
