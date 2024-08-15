@@ -46,7 +46,7 @@ export const ProjectProvider = props => {
             gitHubRepo:"https://github.com/MrDawit/All-U-Can-Burger",
             deployURL:"https://all-u-can-burger.herokuapp.com/",
             skills: "JavaScript, HTML5, CSS3, REST API, NodeJS, Express Handlebars, JQuery, AJAX, MySQL, Sequelize, Bootstrap, MVC design pattern ",
-            id: 4
+            id: 8
         },
         {
             
@@ -56,7 +56,7 @@ export const ProjectProvider = props => {
             gitHubRepo:"https://github.com/MrDawit/WeatherApp",
             deployURL:"https://MrDawit.github.io/WeatherApp",
             skills: "HTML, CSS, Web API, Javascript, Localstorage API, Bootstrap, DOM, Moment library",
-            id: 5
+            id: 4
         },
         {
            
@@ -66,7 +66,7 @@ export const ProjectProvider = props => {
             gitHubRepo:"https://github.com/MrDawit/Scheduler",
             deployURL:"https://MrDawit.github.io/Scheduler",
             skills: "HTML, CSS, JQuery, Javascript, Localstorage API, Bootstrap, DOM, Moment library",
-            id: 6
+            id: 5
         },
         {
             
@@ -86,7 +86,7 @@ export const ProjectProvider = props => {
             gitHubRepo:"https://github.com/MrDawit/Code-Quiz",
             deployURL:"https://mrdawit.github.io/Code-Quiz/index.html",
             skills: "HTML, CSS, JQuery, Javascript, Localstorage API, Bootstrap, DOM, Moment library",
-            id: 8
+            id: 6
         }
        
 
