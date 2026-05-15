@@ -13,9 +13,19 @@ export const ProjectProvider = props => {
             descriptionShort: "A REACT app to help users not lose their tools!",
             imageURL: require("../assets/img/toolshed.png"),
             gitHubRepo:"https://github.com/MrDawit/ToolShed",
-            deployURL:"https://toolshed.onrender.com/",
+            deployURL:"https://toolshed-nosignin.onrender.com",
             skills: "React, REST API, OKTA, BLK systems framework, Bootstrap, MySQL, NodeJS, Javascript, HTML, CSS",
             id: 1
+        },
+         {
+            
+            name: "Wa Shin Ryu Jujutsu",
+            descriptionShort: "A REACT website for a martial arts class/club",
+            imageURL: require("../assets/img/wsrjjujutsu.jpg"),
+            gitHubRepo:"https://github.com/MrDawit/WaShinRyu-Jujutsu",
+            deployURL:"https://www.wsrjj.org",
+            skills: "React, REST API, NodeMailer, Bootstrap, MySQL, NodeJS, Javascript, HTML, CSS",
+            id: 2
         },
         {
            
@@ -25,7 +35,7 @@ export const ProjectProvider = props => {
             gitHubRepo:"https://github.com/troylochner/covid19-info",
             deployURL:"https://troylochner.github.io/covid19-info/",
             skills: "Web API, Materialize framework, Javascript, JQuery, HTML, CSS",
-            id: 2
+            id: 3
         }, 
         {
            
@@ -36,7 +46,7 @@ export const ProjectProvider = props => {
             deployURL:"https://recipe-tracker-3dbj.onrender.com",
             loginInfo:"* (For Login) EMAIL: Shalom.Dawit@gmail.com PASSWORD: food",
             skills: "JavaScript, HTML, CSS3, REST API, NodeMailer, NodeJS, Express Handlebars, JQuery, AJAX, Passport, Sequelize, Bootstrap ",
-            id: 3
+            id: 4
         }, 
         {
            
@@ -46,7 +56,7 @@ export const ProjectProvider = props => {
             gitHubRepo:"https://github.com/MrDawit/All-U-Can-Burger",
             deployURL:"https://all-u-can-burger.herokuapp.com/",
             skills: "JavaScript, HTML5, CSS3, REST API, NodeJS, Express Handlebars, JQuery, AJAX, MySQL, Sequelize, Bootstrap, MVC design pattern ",
-            id: 8
+            id: 5
         },
         {
             
@@ -56,7 +66,7 @@ export const ProjectProvider = props => {
             gitHubRepo:"https://github.com/MrDawit/WeatherApp",
             deployURL:"https://MrDawit.github.io/WeatherApp",
             skills: "HTML, CSS, Web API, Javascript, Localstorage API, Bootstrap, DOM, Moment library",
-            id: 4
+            id: 6
         },
         {
            
@@ -66,7 +76,7 @@ export const ProjectProvider = props => {
             gitHubRepo:"https://github.com/MrDawit/Scheduler",
             deployURL:"https://MrDawit.github.io/Scheduler",
             skills: "HTML, CSS, JQuery, Javascript, Localstorage API, Bootstrap, DOM, Moment library",
-            id: 5
+            id: 7
         },
         {
             
@@ -76,7 +86,7 @@ export const ProjectProvider = props => {
             gitHubRepo:"https://github.com/MrDawit/Google-Books",
             deployURL:"https://google-books-hmwk.herokuapp.com/",
             skills: "React, CSS, REST API, MERN-stack, MongoDB, Mongoose, Node, Axios, Bootstrap",
-            id: 7
+            id: 8
         },
         {
             
@@ -86,7 +96,7 @@ export const ProjectProvider = props => {
             gitHubRepo:"https://github.com/MrDawit/Code-Quiz",
             deployURL:"https://mrdawit.github.io/Code-Quiz/index.html",
             skills: "HTML, CSS, JQuery, Javascript, Localstorage API, Bootstrap, DOM, Moment library",
-            id: 6
+            id: 9
         }
        
 
