@@ -69,7 +69,7 @@ module.exports = function (app) {
           console.log(`Error Code: ${err.code}`);
           //res.status(500).json({ error: err.message })
         } else {
-          console.log(`Message sent: ${res.messageId}`);
+         // console.log(`Message sent: ${res.messageId}`);
           //Object being sent back on SUCCESSFUL completion of email being sent
           response.json({
             status: 'SENT'
@@ -83,8 +83,8 @@ module.exports = function (app) {
         transporter.close();
 
       });
-       console.log("Message sent: %s", info.messageId);
-
+      //  console.log("Message sent: %s", info.messageId);
+console.log("Message sent?");
 
 
     };
