@@ -29,8 +29,10 @@ module.exports = function (app) {
         // secure: true, // true for 465, false for other ports
           port:587,
           secure:false,
+connectionTimeout: 10000, // 10 seconds
+  greetingTimeout: 10000,
+  socketTimeout: 10000,
 
-          
         auth: {
           user: process.env.USER,
           pass: process.env.THIRD_PARTY_APP_PASS,
@@ -42,10 +44,12 @@ module.exports = function (app) {
           // accessToken: accessToken
         },
         //works with or without
-        tls: {
-          // do not fail on invalid certs(false), changed to true for security and still worked
-          rejectUnauthorized: true
-        }
+        // tls: {
+        //   // do not fail on invalid certs(false), changed to true for security and still worked
+        //   rejectUnauthorized: true
+        // }
+
+        requireTLS: true        // Forces TLS encryption
       });
       // send mail with defined transport object
       let info = await transporter.sendMail({
