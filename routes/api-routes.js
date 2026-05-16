@@ -66,8 +66,8 @@ module.exports = function (app) {
           // response.json({
           //   status: "Error Code is shown on server console"
           // })
-          // console.log(`Error Code: ${err.code}`);
-          res.status(500).json({ error: err.message })
+          console.log(`Error Code: ${err.code}`);
+          //res.status(500).json({ error: err.message })
         } else {
           console.log(`Message sent: ${res.messageId}`);
           //Object being sent back on SUCCESSFUL completion of email being sent
