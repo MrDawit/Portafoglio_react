@@ -57,16 +57,17 @@ module.exports = function (app) {
                 <p>Message: ${req.body.message}</p>`, // html body
         // dsn: {
         //     return: 'headers',
-        //     notify: ['success','failure','delay'],
+         //  notify: ['success','failure','delay']
         //     recipient: `${process.env.MAIL_USER}`
         // }
       }, function (err, res) {
         if (err) {
           //Object being sent back on UNSUCCESSFUL completion of email being sent
-          response.json({
-            status: "Error Code is shown on server console"
-          })
-          console.log(`Error Code: ${err.code}`);
+          // response.json({
+          //   status: "Error Code is shown on server console"
+          // })
+          // console.log(`Error Code: ${err.code}`);
+          res.status(500).json({ error: err.message })
         } else {
           console.log(`Message sent: ${res.messageId}`);
           //Object being sent back on SUCCESSFUL completion of email being sent
@@ -82,12 +83,13 @@ module.exports = function (app) {
         transporter.close();
 
       });
-      // console.log("Message sent: %s", info.messageId);
+       console.log("Message sent: %s", info.messageId);
 
 
 
     };
-    main().catch(console.error);
+     main().catch(console.error);
+   // res.status(500).json({ error: err.message })
   });
 
 };

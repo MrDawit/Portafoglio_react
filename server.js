@@ -4,7 +4,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.SERVER_PORT || 8080;
 
 //conditional for child_process working under cross platform conditions
 const start = (process.platform == 'darwin'? 'open': process.platform == 'win32'? 'start': 'xdg-open');
