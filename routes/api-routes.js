@@ -25,9 +25,12 @@ module.exports = function (app) {
         //works with or without name key
         //name: "www.mail.zoho.com",
         host: "smtp.zoho.com",
-        port: 465,
-        secure: true, // true for 465, false for other ports
+        // port: 465,
+        // secure: true, // true for 465, false for other ports
+          port:587,
+          secure:false,
 
+          
         auth: {
           user: process.env.USER,
           pass: process.env.THIRD_PARTY_APP_PASS,
