@@ -3,25 +3,18 @@ require("dotenv").config();
 //const nodemailer = require("nodemailer");
 //const { google } = require("googleapis");
 //const Mail = require("nodemailer/lib/mailer");
+import * as Brevo from '@getbrevo/brevo'
 //import * as Brevo from 'brevo-node';
 //const Brevo =require('brevo-node');
+//const Brevo = require('@getbrevo/brevo');
 
-//import * as Brevo from 'brevo-node';
-//const Brevo =require('brevo-node');
-// const Brevo = require('@getbrevo/brevo');
-// const {BrevoClient}=require("@getbrevo/brevo");
-// const { TransactionalEmailsApi, SendSmtpEmail } = require( "@getbrevo/brevo");
-
-
-const Brevo = require('@getbrevo/brevo');
-
-module.exports = function (app) {
+// module.exports = function (app) {
 // // import * as Brevo from 'brevo-node';
 
-  app.post("/api/contact", function (req, response) {
-    console.log("Request Object: " + JSON.stringify(req.body));
+//   app.post("/api/contact", function (req, response) {
+//     console.log("Request Object: " + JSON.stringify(req.body));
   
-    async function main() {
+//     async function main() {
 //      // let testAccount = await nodemailer.createTestAccount();
 //       // let oAuth2Client = new google.auth.OAuth2(process.env.CLIENT_ID, process.env.CLIENT_SECRET, process.env.REDIRECT_URI);
 //       // oAuth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
@@ -64,8 +57,8 @@ module.exports = function (app) {
 //       let info = await transporter.sendMail({
 //         from: `'Portafoglio App' <${process.env.USER}>`, // sender address
 //          to: `'Contacts' <${process.env.USER}>`, // list of receivers,MUST BE VALID email
-//             // from: `'Portafoglio App' <SENDERS EMAIL>`, // sender address
-//         // to: `'Contacts' <RECIPIENTS EMAIL>`, // list of receivers,MUST BE VALID email
+//             // from: `'Portafoglio App' <newdigitalworld.shalomdawit@gmail.com>`, // sender address
+//         // to: `'Contacts' <newdigitalworld.shalomdawit@gmail.com>`, // list of receivers,MUST BE VALID email
 //         subject: `${req.body.subject}`, // Subject line
 //         text: `${req.body.message}`, // plain text body
 //         // html: "just a test",
@@ -114,16 +107,13 @@ module.exports = function (app) {
 
 
 
-// const apiInstance = new Brevo.TransactionalEmailsApi();
-let apiInstance = new Brevo.TransactionalEmailsApi();
-
+const apiInstance = new Brevo.TransactionalEmailsApi();
 apiInstance.setApiKey(Brevo.TransactionalEmailsApiApiKeys.apiKey, 'YOUR API KEY');
 
 module.exports = async function handler(req, res){
 
 // export default async function handler(req, res) {
-  // const sendSmtpEmail = new Brevo.SendSmtpEmail();
-   let sendSmtpEmail = new Brevo.SendSmtpEmail();
+  const sendSmtpEmail = new Brevo.SendSmtpEmail();
 
   sendSmtpEmail.subject = "Hello from React!";
   sendSmtpEmail.htmlContent = "<html><body><h1>This is a test email</h1></body></html>";
@@ -138,9 +128,9 @@ module.exports = async function handler(req, res){
   }
 };
 
-};
- main().catch(console.error);
-//    // res.status(500).json({ error: err.message })
-  });
+// };
+//  main().catch(console.error);
+// //    // res.status(500).json({ error: err.message })
+//   });
 
-  };
+//   };

@@ -32,7 +32,7 @@ if (process.env.NODE_ENV === "production") {
   });
 
   //listen for requests
-  app.listen(SERVER_PORT, "0.0.0.0", () => {
+  app.listen(SERVER_PORT, () => {
     if (process.env.NODE_ENV_PRODUCTION_TEST === "true") {
       //opens up localhost address on browser
       require("child_process").exec(
