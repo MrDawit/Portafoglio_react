@@ -1,15 +1,10 @@
-// require("dotenv").config();
-import 'dotenv/config';
 
-// const express = require("express");
-// const bodyParser = require("body-parser");
-// const cookieParser = require("cookie-parser");
+import "dotenv/config";
+import express from "express";
+import bodyParser from "body-parser";
+import cookieParser from "cookie-parser";
 
-import express from 'express';
-import bodyParser from 'body-parser';
-import cookieParser from 'cookie-parser';
-
-import { exec } from 'child_process';
+import { exec } from "child_process";
 
 const SERVER_PORT = process.env.SERVER_PORT || 8080;
 
@@ -28,7 +23,7 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 // require("./routes/api-routes.js")(app);
-import apiRoutes from './routes/api-routes.js';
+import apiRoutes from "./routes/api-routes.js";
 apiRoutes(app);
 
 //CONFIGURE FOR HEROKU DEPLOYMENT
@@ -45,21 +40,13 @@ if (process.env.NODE_ENV === "production") {
   app.listen(SERVER_PORT, "0.0.0.0", () => {
     if (process.env.NODE_ENV_PRODUCTION_TEST === "true") {
       //opens up localhost address on browser
-      // require("child_process").exec(
-      //   `${start} http://localhost:${SERVER_PORT}/`,
-      // );
-      exec(
-        `${start} http://localhost:${SERVER_PORT}/`,
-      );
+      exec(`${start} http://localhost:${SERVER_PORT}/`);
       console.log(
         `Server is running on port ${SERVER_PORT} in production mode.`,
       );
     } else {
       //opens up production address on browser
-      // require("child_process").exec(
-      exec(
-        `${start} https://portafoglioreact.onrender.com/`,
-      );
+      exec(`${start} https://portafoglioreact.onrender.com/`);
       console.log(
         `Server is running on port ${SERVER_PORT} in production address.`,
       );
