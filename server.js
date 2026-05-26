@@ -9,6 +9,8 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 
+import { exec } from 'child_process';
+
 const SERVER_PORT = process.env.SERVER_PORT || 8080;
 
 //conditional for child_process working under cross platform conditions
@@ -43,7 +45,10 @@ if (process.env.NODE_ENV === "production") {
   app.listen(SERVER_PORT, "0.0.0.0", () => {
     if (process.env.NODE_ENV_PRODUCTION_TEST === "true") {
       //opens up localhost address on browser
-      require("child_process").exec(
+      // require("child_process").exec(
+      //   `${start} http://localhost:${SERVER_PORT}/`,
+      // );
+      exec(
         `${start} http://localhost:${SERVER_PORT}/`,
       );
       console.log(
@@ -51,7 +56,8 @@ if (process.env.NODE_ENV === "production") {
       );
     } else {
       //opens up production address on browser
-      require("child_process").exec(
+      // require("child_process").exec(
+      exec(
         `${start} https://portafoglioreact.onrender.com/`,
       );
       console.log(
