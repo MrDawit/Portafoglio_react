@@ -1,7 +1,13 @@
-require("dotenv").config();
-const express = require("express");
-const bodyParser = require("body-parser");
-const cookieParser = require("cookie-parser");
+// require("dotenv").config();
+import 'dotenv/config';
+
+// const express = require("express");
+// const bodyParser = require("body-parser");
+// const cookieParser = require("cookie-parser");
+
+import express from 'express';
+import bodyParser from 'body-parser';
+import cookieParser from 'cookie-parser';
 
 const SERVER_PORT = process.env.SERVER_PORT || 8080;
 
@@ -19,7 +25,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
 
-require("./routes/api-routes.js")(app);
+// require("./routes/api-routes.js")(app);
+import apiRoutes from './routes/api-routes.js';
+apiRoutes(app);
 
 //CONFIGURE FOR HEROKU DEPLOYMENT
 

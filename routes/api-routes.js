@@ -1,8 +1,14 @@
-require("dotenv").config();
-const nodemailer = require("nodemailer");
+// require("dotenv").config();
+import 'dotenv/config';
+// const nodemailer = require("nodemailer");
+import nodemailer from 'nodemailer';
 //const { google } = require("googleapis");
 //const Mail = require("nodemailer/lib/mailer");
-module.exports = function (app) {
+
+import { Resend } from 'resend';
+
+// module.exports = function (app) {
+export default function (app) {
 
   app.post("/api/contact", function (req, response) {
     console.log("Request Object: " + JSON.stringify(req.body));
@@ -14,17 +20,26 @@ module.exports = function (app) {
 
 
     async function main() {
+
+      // Initialize Resend with your API key
+const resend = new Resend(process.env.RESEND_API_KEY);
+
      // let testAccount = await nodemailer.createTestAccount();
       // let oAuth2Client = new google.auth.OAuth2(process.env.CLIENT_ID, process.env.CLIENT_SECRET, process.env.REDIRECT_URI);
       // oAuth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
 
       // let accessToken = await oAuth2Client.getAccessToken();
+      
+
+
 
       // create reusable transporter object using the default SMTP transport
       let transporter = nodemailer.createTransport({
         //works with or without name key
         //name: "www.mail.zoho.com",
-        host: "smtp.zoho.com",
+        // host: "smtp.zoho.com",
+        // host: "://resend.com",
+        host: 'smtp.resend.com',
         // port: 465,
         // secure: true, // true for 465, false for other ports
           port:587,
@@ -34,8 +49,10 @@ connectionTimeout: 10000, // 10 seconds
   socketTimeout: 10000,
 
         auth: {
-          user: process.env.USER,
-          pass: process.env.THIRD_PARTY_APP_PASS,
+          // user: process.env.USER,
+          // pass: process.env.THIRD_PARTY_APP_PASS,
+                user: "resend",
+          pass: process.env.RESEND_API_KEY,
           // type: 'OAuth2',
           // user: process.env.MAIL_USER,
           // clientId: process.env.CLIENT_ID,
@@ -53,8 +70,10 @@ connectionTimeout: 10000, // 10 seconds
       });
       // send mail with defined transport object
       let info = await transporter.sendMail({
-        from: `'Portafoglio App' <${process.env.USER}>`, // sender address
-         to: `'Contacts' <${process.env.USER}>`, // list of receivers,MUST BE VALID email
+        // from: `'Portafoglio App' <onboarding@resend.dev>`, // sender address
+        //  to: `'Contacts' <${process.env.USER}>`, // list of receivers,MUST BE VALID email
+                from: `onboarding@resend.dev`, // sender address
+         to: `${process.env.USER}`, // list of receivers,MUST BE VALID email
         subject: `${req.body.subject}`, // Subject line
         text: `${req.body.message}`, // plain text body
         // html: "just a test",
@@ -90,6 +109,21 @@ connectionTimeout: 10000, // 10 seconds
         transporter.close();
 
       });
+
+
+
+// // working
+// resend.emails.send({
+//   from: `onboarding@resend.dev`,
+//   to: `${process.env.USER}`,
+//   subject: `${req.body.subject}`,
+//   html:          `<p>Contact Name: <b>${req.body.name}</b></p></br>
+//                 <p>Contact Info: <b>${req.body.contactWay}</b></p></br>
+//                 <p>Subject: ${req.body.subject}</p></br>
+//                 <p>Message: ${req.body.message}</p>`, // html body
+// });
+
+
       //  console.log("Message sent: %s", info.messageId);
 console.log("Message sent?");
 
