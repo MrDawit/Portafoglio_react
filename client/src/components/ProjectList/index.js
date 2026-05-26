@@ -3,7 +3,8 @@ import ProjectCard from "../ProjectCard";
 import { ProjectContext } from "../../utils/ProjectContext"
 
 const ProjectList = () => {
-    const [projects, setProjects] = useContext(ProjectContext)
+    
+        const projects = useContext(ProjectContext)
     return (
         <div className="container">
             <div className="row">
