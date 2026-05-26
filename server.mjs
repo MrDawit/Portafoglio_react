@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 // require("./routes/api-routes.js")(app);
-import apiRoutes from "./routes/api-routes.js";
+import apiRoutes from "./routes/api-routes.mjs";
 apiRoutes(app);
 
 //CONFIGURE FOR HEROKU DEPLOYMENT
